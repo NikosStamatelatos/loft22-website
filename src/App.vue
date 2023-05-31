@@ -1,24 +1,28 @@
 <template>
   <div>
-    <base-banner title="CalcMe"></base-banner>
-    <calc-me></calc-me>
+    <the-header title="Welcome"></the-header>
+    <about-us></about-us>
+    <book-lesson></book-lesson>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import BaseBanner from "./layouts/BaseBanner.vue";
-import CalcMe from "./components/CalcMe.vue";
+import TheHeader from "./layouts/TheHeader.vue";
+import AboutUs from "./components/AboutUs.vue";
+import BookLesson from "./components/BookLesson.vue";
 
 export default {
   components: {
-    BaseBanner,
-    CalcMe,
+    TheHeader,
+    AboutUs,
+    BookLesson,
   },
 };
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,12 +30,12 @@ export default {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 body {
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(34, 34, 34);
 }
 </style>
