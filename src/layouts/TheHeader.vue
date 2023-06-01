@@ -1,7 +1,9 @@
 <template>
-  <h1 class="banner">
-    <h1>{{ title }}</h1>
-  </h1>
+  <router-link class="link" to="/">
+    <h1 class="banner">
+      <h1>{{ title }}</h1>
+    </h1>
+  </router-link>
 </template>
 
 <script>
@@ -28,5 +30,9 @@ export default {
 .banner h1 {
   color: white;
   margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 </style>

@@ -5,8 +5,9 @@ import BookLesson from "./components/BookLesson.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    { path: "/", redirect: "/homepage" },
     { path: "/about-us", component: AboutUs },
-    { path: "/booklesson", component: BookLesson },
+    { path: "/book-lesson", component: BookLesson },
   ],
 });
 

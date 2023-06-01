@@ -4,11 +4,15 @@
       <ul>
         <li>
           <router-link to="about-us">
-            <button @click="openAboutUsPage">About us</button>
+            <button @click="toggleAboutUsBtn">About us</button>
           </router-link>
         </li>
         <li>
-          <button class="book-lesson-btn">Book a lesson</button>
+          <router-link to="book-lesson">
+            <button @click="toggleBookLessonBtn" class="book-lesson-btn">
+              Book a lesson
+            </button>
+          </router-link>
         </li>
       </ul>
     </nav>
@@ -22,9 +26,20 @@ export default {
   components: {
     RouterLink,
   },
+  data() {
+    return {
+      showBookLessonBtn: true,
+      showAboutUsBtn: true,
+    };
+  },
   methods: {
-    openAboutUsPage() {
-      this.$emit("open-about-us-page");
+    toggleAboutUsBtn() {
+      this.showBookLessonBtn = !this.showBookLessonBtn;
+      this.showAboutUsBtn = !this.showAboutUsBtn;
+    },
+    toggleBookLessonBtn() {
+      this.showBookLessonBtn = !this.showBookLessonBtn;
+      this.showAboutUsBtn = !this.showAboutUsBtn;
     },
   },
 };
