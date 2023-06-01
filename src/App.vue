@@ -1,23 +1,22 @@
 <template>
   <div>
     <the-header title="Welcome"></the-header>
-    <about-us></about-us>
-    <book-lesson></book-lesson>
+    <the-navigation></the-navigation>
+
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import TheHeader from "./layouts/TheHeader.vue";
-import AboutUs from "./components/AboutUs.vue";
-import BookLesson from "./components/BookLesson.vue";
+import TheNavigation from "./nav/TheNavigation.vue";
 
 export default {
   components: {
     TheHeader,
-    AboutUs,
-    BookLesson,
+    TheNavigation,
   },
+  methods: {},
 };
 </script>
 
