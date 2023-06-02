@@ -1,7 +1,6 @@
 <template>
   <div>
     <the-header title="Welcome"></the-header>
-    <the-navigation></the-navigation>
 
     <router-view></router-view>
   </div>
@@ -9,12 +8,10 @@
 
 <script>
 import TheHeader from "./layouts/TheHeader.vue";
-import TheNavigation from "./nav/TheNavigation.vue";
 
 export default {
   components: {
     TheHeader,
-    TheNavigation,
   },
   methods: {},
 };
