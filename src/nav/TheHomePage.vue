@@ -1,18 +1,5 @@
 <template>
-  <nav>
-    <!-- <ul>
-      <li>
-        <router-link to="/about-us">
-          <button>About us</button>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/book-lesson">
-          <button class="book-lesson-btn">Book a lesson</button>
-        </router-link>
-      </li>
-    </ul> -->
-  </nav>
+  <nav></nav>
 </template>
 
 <script>

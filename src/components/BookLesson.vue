@@ -18,7 +18,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      showForm: false,
+    };
+  },
+  methods: {
+    toggleForm() {
+      this.showForm = !this.showForm;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -28,7 +39,7 @@ form {
   padding: 20px;
   width: 300px;
   margin: 50px auto;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .name,
@@ -115,7 +126,7 @@ input[type="date"] {
   padding: 1em 2em;
   color: var(--glow-color);
   font-size: 14px;
-  margin-left: 2rem;
+  margin-left: 4rem;
   font-weight: bold;
   background-color: var(--btn-color);
   border-radius: 1em;

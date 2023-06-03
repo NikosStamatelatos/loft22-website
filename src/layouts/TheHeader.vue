@@ -1,15 +1,19 @@
 <template>
-  <h1 class="banner">
-    <router-link class="link" to="/">
-      <h1>{{ title }}</h1>
-    </router-link>
-    <router-link to="/about-me">
-      <button>About me</button>
-    </router-link>
-    <router-link to="/book-lesson">
-      <button class="book-lesson-btn">Book a lesson</button>
-    </router-link>
-  </h1>
+  <div>
+    <h1 class="banner">
+      <router-link class="link" to="/">
+        <h1>{{ title }}</h1>
+      </router-link>
+      <router-link to="/about-me">
+        <button>About me</button>
+      </router-link>
+      <router-link to="/book-lesson">
+        <button class="book-lesson-btn" @click="toggleForm">
+          Book a lesson
+        </button>
+      </router-link>
+    </h1>
+  </div>
 </template>
 
 <script>
@@ -80,5 +84,35 @@ button:hover {
     rgb(205, 148, 238) 60%
   );
   color: rgb(4, 4, 38);
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active {
+  animation: modal 0.3s ease-out;
+}
+
+.modal-leave-active {
+  animation: modal 0.3s ease-in reverse;
+}
+
+.modal-enter-to,
+.modal-leave-from {
+  opacity: 1;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 </style>
