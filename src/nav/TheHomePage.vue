@@ -2,7 +2,7 @@
   <nav></nav>
 </template>
 
-<script>
+<!-- <script>
 export default {
   components: {},
 };
@@ -47,4 +47,4 @@ button:hover {
   margin-top: 10rem;
   margin-left: 75rem;
 }
-</style>
+</style> -->

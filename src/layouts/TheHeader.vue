@@ -1,9 +1,7 @@
 <template>
   <div>
-    <h1 class="banner">
-      <router-link class="link" to="/">
-        <h1>{{ title }}</h1>
-      </router-link>
+    <h1 class="welcome">
+      <router-link class="home" to="/">Welcome</router-link>
       <router-link to="/about-me">
         <button>About me</button>
       </router-link>
@@ -23,17 +21,16 @@ export default {
   components: {
     RouterLink,
   },
-  props: ["title"],
 };
 </script>
 
 <style scoped>
-.banner {
+.welcome {
   width: 100%;
   height: 15rem;
   background-color: rgb(36, 36, 36);
   border-bottom: 2px solid rgb(182, 113, 221);
-  display: flex;
+  /* display: flex; */
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -42,21 +39,19 @@ export default {
   box-shadow: 0 10px 50px rgb(182, 113, 221);
 }
 
-.banner h1 {
-  color: white;
-  margin: 0;
-  margin-right: 50rem;
-}
-
-.link {
+.home {
   text-decoration: none;
+  color: white;
+  font-size: 50px;
+  margin-left: 15rem;
 }
 
 button {
   font-size: 1.2rem;
   padding: 1rem 2.5rem;
-  margin-left: 8rem;
-  margin-top: 0rem;
+  margin-left: 50rem;
+  margin-top: 5rem;
+  margin-right: 0;
   border: none;
   outline: none;
   border-radius: 0.4rem;
@@ -84,6 +79,10 @@ button:hover {
     rgb(205, 148, 238) 60%
   );
   color: rgb(4, 4, 38);
+}
+
+.book-lesson-btn {
+  margin-left: 150px;
 }
 
 .modal-enter-from,

@@ -9,8 +9,8 @@
       <input type="email" />
     </div>
     <div class="date">
-      Date:
-      <input type="date" />
+      <label for="date-input">Date:</label>
+      <input type="date" :min="minDate" />
     </div>
     <button class="book-btn" type="submit">Book</button>
     <button class="clear-btn" type="submit">Clear</button>
@@ -22,12 +22,8 @@ export default {
   data() {
     return {
       showForm: false,
+      minDate: new Date().toISOString().split("T")[0],
     };
-  },
-  methods: {
-    toggleForm() {
-      this.showForm = !this.showForm;
-    },
   },
 };
 </script>
@@ -50,6 +46,11 @@ form {
   font-size: 18px;
   font-weight: bold;
   color: white;
+}
+
+.date-picker {
+  background-color: black;
+  color: black;
 }
 
 input[type="name"],
