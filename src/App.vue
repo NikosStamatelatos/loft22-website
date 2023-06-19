@@ -1,11 +1,11 @@
 <template>
   <div>
     <the-header></the-header>
-    <router-view v-slot="slotProps">
-      <transition name="route">
+    <transition name="route">
+      <router-view v-slot="slotProps">
         <component :is="slotProps.Component"></component>
-      </transition>
-    </router-view>
+      </router-view>
+    </transition>
   </div>
 </template>
 

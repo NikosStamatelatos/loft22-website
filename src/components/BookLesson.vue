@@ -1,29 +1,93 @@
 <template>
-  <form>
-    <div class="name">
-      Name:
-      <input type="name" />
-    </div>
-    <div class="email">
-      E-mail:
-      <input type="email" />
-    </div>
-    <div class="date">
-      <label for="date-input">Date:</label>
-      <input type="date" :min="minDate" />
-    </div>
-    <button class="book-btn" type="submit">Book</button>
-    <button class="clear-btn" type="submit">Clear</button>
-  </form>
+  <div>
+    <empty-fields-message
+      :open="inputIsInvalid"
+      title="Empty Input"
+      @close="inputIsInvalid = false"
+    >
+      <p class="textEmpty">Please fill all empty fields!</p>
+      <button class="ok-button" @click="inputIsInvalid = false">Okay</button>
+    </empty-fields-message>
+    <form @submit.prevent="newInput">
+      <div class="name">
+        Name:
+        <input type="name" v-model="name" />
+      </div>
+      <div class="email">
+        E-mail:
+        <input type="email" v-model="email" />
+      </div>
+      <div class="phone">
+        Phone Number:
+        <input type="phone" v-model="phoneNumber" />
+      </div>
+      <div class="date">
+        <label for="date-input">Date:</label>
+        <input type="date" :min="minDate" v-model="date" />
+      </div>
+      <button class="book-btn" type="submit" @click.prevent="bookClicked">
+        Book
+      </button>
+      <button class="clear-btn" type="submit" @click.prevent="clearClicked">
+        Clear
+      </button>
+    </form>
+  </div>
 </template>
 
 <script>
+import EmptyFieldsMessage from "../components/EmptyFieldsMessage.vue";
+
 export default {
+  components: {
+    EmptyFieldsMessage,
+  },
   data() {
     return {
-      showForm: false,
+      // id: "",
+      name: "",
+      email: "",
+      phoneNumber: "",
+      date: "",
       minDate: new Date().toISOString().split("T")[0],
+      showForm: false,
+      inputIsInvalid: false,
     };
+  },
+  emits: ["close"],
+  methods: {
+    newInput() {
+      if (!this.name || !this.email || !this.phoneNumber || !this.date) {
+        this.inputIsInvalid = true;
+      } else {
+        // Perform the desired action when all fields are filled
+      }
+    },
+    bookClicked() {
+      this.buttonClicked = "book";
+      this.validateFields();
+    },
+    clearClicked() {
+      this.buttonClicked = "clear";
+      this.validateFields();
+      this.clearInputs();
+    },
+    validateFields() {
+      if (
+        this.buttonClicked === "book" &&
+        (!this.name || !this.email || !this.phoneNumber || !this.date)
+      ) {
+        this.inputIsInvalid = true;
+      } else {
+        this.inputIsInvalid = false;
+      }
+    },
+    clearInputs() {
+      this.name = "";
+      this.email = "";
+      this.phoneNumber = "";
+      this.date = "";
+    },
   },
 };
 </script>
@@ -40,7 +104,8 @@ form {
 
 .name,
 .email,
-.date {
+.date,
+.phone {
   display: block;
   margin-bottom: 10px;
   font-size: 18px;
@@ -48,14 +113,10 @@ form {
   color: white;
 }
 
-.date-picker {
-  background-color: black;
-  color: black;
-}
-
 input[type="name"],
 input[type="email"],
-input[type="date"] {
+input[type="date"],
+input[type="phone"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -112,6 +173,33 @@ input[type="date"] {
     inset 0 0 0.75em 0.25em var(--glow-color);
 }
 
+.ok-button {
+  --bg: #e66152;
+  --text-color: #fff;
+  position: relative;
+  width: 150px;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #e66152 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.ok-button:hover {
+  opacity: 1;
+}
+
+.ok-button:active {
+  top: 4px;
+  box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
+}
+
 .book-btn:active {
   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
@@ -166,5 +254,15 @@ input[type="date"] {
   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

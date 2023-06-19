@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="sticky-header">
     <h1 class="welcome">
-      <router-link class="home" to="/">Welcome</router-link>
+      <router-link class="home" to="/">Homepage</router-link>
       <router-link to="/about-me">
         <button>About me</button>
       </router-link>
@@ -30,13 +30,19 @@ export default {
   height: 15rem;
   background-color: rgb(36, 36, 36);
   border-bottom: 2px solid rgb(182, 113, 221);
-  /* display: flex; */
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   justify-content: center;
   align-items: center;
   box-shadow: 0 10px 50px rgb(182, 113, 221);
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: white; /* Set the desired background color */
+  z-index: 999; /* Set a higher z-index value if necessary */
 }
 
 .home {
