@@ -6,6 +6,10 @@
       <img src="../imgs/logotipo.jpg" alt="Loft-22" />
     </div>
     <!--/logo-->
+    <div id="logo2">
+      <!--#logo_for responsive-->
+      <img src="../imgs/logotipo.jpg" alt="Loft-22" />
+    </div>
     <!--#menu-->
     <nav>
       <ul id="nav">
