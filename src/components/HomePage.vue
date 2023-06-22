@@ -1,6 +1,6 @@
 <template>
-  <div id="title">Welcome to Loft 22 Coffee Shop<br /></div>
   <!--/title-->
+  <div id="title">Welcome to Loft 22 Coffee Shop<br /></div>
   <!-- ***** - Slider - ***** -->
   <div class="slider-container">
     <div class="swiper-container">
@@ -76,6 +76,10 @@ export default {
 .slider-container {
   display: flex;
   justify-content: center;
+  text-align: center;
+  position: relative;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
   position: relative;
 }
 
