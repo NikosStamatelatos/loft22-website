@@ -14,16 +14,16 @@
     <nav>
       <ul id="nav">
         <li>
-          <a href="#home"> Home </a>
+          <router-link to="/home">Home</router-link>
         </li>
         <li>
-          <a href="#menu"> Menu </a>
+          <router-link to="/menu">Menu</router-link>
         </li>
         <li>
-          <a href="#blog"> Blog </a>
+          <router-link to="/blog">Blog</router-link>
         </li>
         <li>
-          <a href="#find-us"> Find Us </a>
+          <router-link to="/find-us">Find Us</router-link>
         </li>
       </ul>
     </nav>

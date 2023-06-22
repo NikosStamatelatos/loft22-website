@@ -1,66 +1,70 @@
 <template>
   <!--/title-->
   <div id="title">Welcome to Loft 22 Coffee Shop<br /></div>
-  <!-- ***** - Slider - ***** -->
-  <div class="slider-container">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../imgs/slider/flex4.jpg" alt="image" />
-          <div class="description">
-            <p>Some description here</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="../imgs/slider/flex1.jpg" alt="image" />
-          <div class="description">
-            <p>Some description here</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="../imgs/slider/flex2.jpg" alt="image" />
-          <div class="description">
-            <p>Some description here</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <!-- Add next arrow -->
-      <div class="swiper-button-prev"></div>
-      <!-- Add previous arrow -->
-      <div class="swiper-pagination"></div>
+  <!-- ***** - Main image - ***** -->
+  <div class="main-image">
+    <img src="../imgs/img3-loft22.jpg" alt="image" />
+    <div class="description">
+      <p>Coffee | Snack</p>
     </div>
   </div>
+
+  <!-- ***** - texts boxes - ***** -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <!--.grid-item-->
+      <div class="txt-title">Get For Homme</div>
+      <!--.icon-->
+      <div class="icon_title"><i class="fa fa-motorcycle fa-lg"></i></div>
+      <!--/.icon-->
+      <!--/.txt-title-->
+      <div class="txt">
+        Enjoy American cuisine from the buffet while meeting characters at the
+        Supercalifragilistic Breakfast, Wonderland Tea Party or Cinderella's
+        Happily Ever After Dinner. call us for +1 555 666 555 or get an email
+        reservation
+      </div>
+      <!--/.txt-->
+    </div>
+    <!--/grid-item-->
+    <div class="grid-item">
+      <!--.grid-item-->
+      <div class="txt-title">Breakfest</div>
+      <!--.icon-->
+      <div class="icon_title"><i class="fa fa-bed fa-lg"></i></div>
+      <!--/.icon-->
+      <!--/.txt-title-->
+      <div class="txt">
+        Enjoy American cuisine from the buffet while meeting characters at the
+        Supercalifragilistic Breakfast, Wonderland Tea Party or Cinderella's
+        Happily Ever After Dinner. call us for +1 555 666 555 or get an email
+        reservation
+      </div>
+      <!--/.txt-->
+    </div>
+    <!--/grid-item-->
+    <div class="grid-item">
+      <!--.grid-item-->
+      <div class="txt-title">Business lunch</div>
+      <!--.icon-->
+      <div class="icon_title"><i class="fa fa-briefcase fa-lg"></i></div>
+      <!--/.icon-->
+      <!--/.txt-title-->
+      <div class="txt">
+        Enjoy American cuisine from the buffet while meeting characters at the
+        Supercalifragilistic Breakfast, Wonderland Tea Party or Cinderella's
+        Happily Ever After Dinner. call us for +1 555 666 555 or get an email
+        reservation
+      </div>
+      <!--/.txt-->
+    </div>
+    <!--/grid-item-->
+  </div>
+  <!--/grid-container-->
 </template>
 
 <script>
-import Swiper, { Navigation } from "swiper";
-import "swiper/swiper-bundle.css";
-
-Swiper.use([Navigation]); // Register the navigation module
-
-export default {
-  mounted() {
-    new Swiper(".swiper-container", {
-      slidesPerView: 3, // Display 3 slides on desktop
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next", // Next arrow selector
-        prevEl: ".swiper-button-prev", // Previous arrow selector
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        // Responsive breakpoints
-        768: {
-          slidesPerView: 1, // Display 1 slide on mobile
-        },
-      },
-    });
-  },
-};
+export default {};
 </script>
 
 <style scoped>
@@ -71,38 +75,56 @@ export default {
   font-family: "Qwigley", cursive;
   text-align: center;
   margin-bottom: 20px;
+  color: #9a845d;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.slider-container {
+.main-image {
   display: flex;
   justify-content: center;
-  text-align: center;
-  position: relative;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-  position: relative;
+  align-items: center;
+  flex-direction: column;
 }
 
-.swiper-container {
-  width: 100%;
+.main-image img {
+  width: 50%; /* Adjust the size as desired */
+  height: 550px;
+
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  z-index: 10;
-  cursor: pointer;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
-.swiper-button-next {
-  right: 10px;
+@media screen and (max-width: 480px) {
+  /* Styles for mobile devices with a maximum width of 480px */
+  #title {
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 25px !important;
+  }
 }
 
-.swiper-button-prev {
-  left: 10px;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for devices with a width between 481px and 768px */
+  #title {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Styles for devices with a width larger than 769px */
+  #title {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
 }
 </style>

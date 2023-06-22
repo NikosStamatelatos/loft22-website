@@ -336,6 +336,7 @@ h5 a {
 
 #credits {
   color: #999;
+  margin-top: 10px;
 }
 
 .img1:hover {
@@ -899,11 +900,7 @@ nav {
 }
 
 .grid_8 {
-  width: 306px;
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 200%;
 }
 
 .grid_half {
@@ -1185,7 +1182,7 @@ html[xmlns] .slides {
 }
 
 .description {
-  position: relative;
+  position: center;
   background: #000;
   color: #fff;
   z-index: 9999999;
@@ -1195,6 +1192,7 @@ html[xmlns] .slides {
   text-align: left;
   margin-top: -60px;
   opacity: 1;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
 .description p {
