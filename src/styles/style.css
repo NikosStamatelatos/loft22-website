@@ -332,6 +332,7 @@ h5 a {
 .txt-title {
   color: #fff;
   text-shadow: 0px 0px 30px #2e2e2e;
+  text-align: center;
 }
 
 #credits {
@@ -777,16 +778,14 @@ nav {
 
 #title {
   font-size: 56px;
-  text-align: center;
   font-family: "Qwigley", cursive;
   padding: 120px 0px 30px 0;
   letter-spacing: 2px;
+  /* text-align: center; */
 }
 
 .title-home {
-  text-align: center;
   font-size: 28px;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: -15px;
@@ -931,7 +930,7 @@ nav {
 .txt-title {
   font-size: 42px;
   font-family: "Qwigley", cursive;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 15px;
   margin-bottom: 7px;
   letter-spacing: 2px;
@@ -2160,9 +2159,9 @@ h2.active {
   border: none;
 }
 
-.slicknav_menu {
+/* .slicknav_menu {
   display: none;
-}
+} */
 
 input,
 textarea {
@@ -2928,17 +2927,17 @@ body.introLoader_preventScroll {
     display: none;
   }
 
-  .js .slicknav_menu {
+  /* .js .slicknav_menu {
     display: block;
-  }
+  } */
 
-  .sub_menu {
+  /* .sub_menu {
     border: none !important;
-  }
-
+  } */
+  /* 
   .slicknav_menu .sub_menu {
     background: none !important;
-  }
+  } */
 
   .wrapper {
     width: 100%;
@@ -2961,7 +2960,7 @@ body.introLoader_preventScroll {
     background: none;
     border: none;
     width: 100%;
-    position: fixed;
+    position: relative;
     height: auto;
   }
 
@@ -2990,7 +2989,7 @@ body.introLoader_preventScroll {
 
   #title {
     font-size: 58px;
-    text-align: center;
+    /* text-align: center; */
     color: #fff;
     font-family: "Qwigley", cursive;
     margin: 0px 0px 30px 0 !important;
@@ -3000,7 +2999,7 @@ body.introLoader_preventScroll {
   }
 
   .title-home {
-    text-align: center;
+    /* text-align: center; */
     font-size: 28px;
     color: #c4c4c4 !important;
     text-shadow: 2px 2px #000;

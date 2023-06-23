@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style>
-@import "./assets/font-awesome.min.css";
-@import "./assets/slicknav_dark.css";
+@import "./styles/font-awesome.min.css";
+@import "./styles/slicknav_dark.css";
 
-@import "./assets/style.css";
+@import "./styles/style.css";
 </style>

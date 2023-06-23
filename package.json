@@ -12,6 +12,7 @@
     "flexslider": "^2.7.2",
     "google-maps-api-loader": "^1.1.1",
     "jquery": "^3.7.0",
+    "slicknav": "^1.0.8",
     "swiper": "^9.4.1",
     "vue": "^3.2.13",
     "vue-router": "^4.2.2",
@@ -26,7 +27,7 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vue": "^8.7.1",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2"
   },

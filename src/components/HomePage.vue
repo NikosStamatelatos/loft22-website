@@ -7,70 +7,23 @@
     <div class="description">
       <p>Coffee | Snack</p>
     </div>
+    <content-homepage></content-homepage>
   </div>
-
-  <!-- ***** - texts boxes - ***** -->
-  <div class="grid-container">
-    <div class="grid-item">
-      <!--.grid-item-->
-      <div class="txt-title">Get For Homme</div>
-      <!--.icon-->
-      <div class="icon_title"><i class="fa fa-motorcycle fa-lg"></i></div>
-      <!--/.icon-->
-      <!--/.txt-title-->
-      <div class="txt">
-        Enjoy American cuisine from the buffet while meeting characters at the
-        Supercalifragilistic Breakfast, Wonderland Tea Party or Cinderella's
-        Happily Ever After Dinner. call us for +1 555 666 555 or get an email
-        reservation
-      </div>
-      <!--/.txt-->
-    </div>
-    <!--/grid-item-->
-    <div class="grid-item">
-      <!--.grid-item-->
-      <div class="txt-title">Breakfest</div>
-      <!--.icon-->
-      <div class="icon_title"><i class="fa fa-bed fa-lg"></i></div>
-      <!--/.icon-->
-      <!--/.txt-title-->
-      <div class="txt">
-        Enjoy American cuisine from the buffet while meeting characters at the
-        Supercalifragilistic Breakfast, Wonderland Tea Party or Cinderella's
-        Happily Ever After Dinner. call us for +1 555 666 555 or get an email
-        reservation
-      </div>
-      <!--/.txt-->
-    </div>
-    <!--/grid-item-->
-    <div class="grid-item">
-      <!--.grid-item-->
-      <div class="txt-title">Business lunch</div>
-      <!--.icon-->
-      <div class="icon_title"><i class="fa fa-briefcase fa-lg"></i></div>
-      <!--/.icon-->
-      <!--/.txt-title-->
-      <div class="txt">
-        Enjoy American cuisine from the buffet while meeting characters at the
-        Supercalifragilistic Breakfast, Wonderland Tea Party or Cinderella's
-        Happily Ever After Dinner. call us for +1 555 666 555 or get an email
-        reservation
-      </div>
-      <!--/.txt-->
-    </div>
-    <!--/grid-item-->
-  </div>
-  <!--/grid-container-->
 </template>
 
 <script>
-export default {};
+import ContentHomepage from "../components/ContentHomepage.vue";
+export default {
+  components: {
+    ContentHomepage,
+  },
+};
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Qwigley&family=Rajdhani&display=swap");
 
-@import "../assets/style.css";
+@import "../styles/style.css";
 #title {
   font-family: "Qwigley", cursive;
   text-align: center;
@@ -93,22 +46,12 @@ export default {};
   box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-bottom: 5rem;
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-}
-
 @media screen and (max-width: 480px) {
   /* Styles for mobile devices with a maximum width of 480px */
   #title {
     font-size: 70px;
     margin-bottom: 10px;
-    margin-top: 100px !important;
+    margin-top: 20px !important;
   }
 }
 

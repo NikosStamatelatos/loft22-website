@@ -135,5 +135,5 @@
 <script></script>
 
 <style scoped>
-@import "../assets/style.css";
+@import "../styles/style.css";
 </style>
