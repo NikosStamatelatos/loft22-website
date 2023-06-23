@@ -108,7 +108,7 @@ export default {};
   #title {
     font-size: 70px;
     margin-bottom: 10px;
-    margin-top: 25px !important;
+    margin-top: 100px !important;
   }
 }
 
