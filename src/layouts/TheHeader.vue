@@ -1,14 +1,6 @@
 <template>
-  <div id="logo">
-    <!--#logo-->
-    <img class="desktop-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
-  </div>
-  <navigation-header v-if="!isMobile"></navigation-header>
+  <navigation-header v-if="!isMobile"> </navigation-header>
   <navigation-mobile v-else></navigation-mobile>
-  <div id="logo2">
-    <!--#logo_for responsive-->
-    <img class="mobile-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
-  </div>
 </template>
 
 <script>
@@ -52,7 +44,7 @@ img {
 .desktop-logo {
   margin-left: 350px;
   margin-top: 50px;
-  position: fixe;
+  position: fixed;
 }
 
 .mobile-logo {
