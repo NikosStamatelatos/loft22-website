@@ -1,6 +1,7 @@
 <template>
+  <div id="home"></div>
   <div class="wrapper">
-     <div id="header" v-if="isMobile === false">
+    <div id="header" v-if="isMobile === false">
       <!--#header-->
       <!--#menu-->
       <nav id="nav-container">
