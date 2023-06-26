@@ -1,20 +1,21 @@
 <template>
   <div id="navigation-mobile">
-    <div id="logo2">
-      <!--#logo_for responsive-->
-      <img class="mobile-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
-    </div>
     <div class="menu-icon" @click="toggleMenu">
       <span></span>
       <span></span>
       <span></span>
+      <div class="menu-label">Menu</div>
     </div>
-    <ul :class="{ 'show-menu': isMenuOpen }">
+    <ul :class="{ 'show-menu': isMenuOpen }" @click.stop>
       <li>Home</li>
       <li>Menu</li>
       <li>Blog</li>
       <li>Find Us</li>
     </ul>
+    <div id="logo2">
+      <!--#logo_for responsive-->
+      <img class="mobile-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
+    </div>
   </div>
 </template>
 
@@ -28,6 +29,17 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+      if (this.isMenuOpen) {
+        document.addEventListener("click", this.closeMenu);
+      } else {
+        document.removeEventListener("click", this.closeMenu);
+      }
+    },
+    closeMenu(event) {
+      if (!this.$el.contains(event.target)) {
+        this.isMenuOpen = false;
+        document.removeEventListener("click", this.closeMenu);
+      }
     },
   },
 };
@@ -35,32 +47,34 @@ export default {
 
 <style scoped>
 @import "../styles/font-awesome.min.css";
+@import "../styles/slicknav_dark.css";
 
 .menu-icon {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  /* position: fixed; */
+  font-size: 16px;
+  width: 100%;
+  background: #000;
+  padding: 12px;
+  text-align: center;
+  opacity: 0.8;
 }
 
 .menu-icon span {
   display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #000;
-  margin-bottom: 6px;
-  transition: transform 0.3s ease-in-out;
+  width: 1.125em;
+  height: 0.125em;
+  margin-top: 0.188rem;
+  background-color: #fff;
 }
 
 ul {
   display: none;
   position: absolute;
-  /* top: 100%; */
-  /* left: 0; */
   background-color: black;
-  /* padding: 10px;  */
-  /* list-style: none; */
   width: 100%;
-  /* Adjust the following properties to make the menu bigger */
   font-size: 20px;
   padding: 10px;
   line-height: 1.2;
@@ -74,12 +88,6 @@ ul {
 .show-menu {
   display: block !important;
 }
-
-/* img {
-  width: 80px;
-  height: 80px;
-  border-radius: 60px;
-} */
 
 .mobile-logo {
   display: block;
@@ -110,5 +118,31 @@ ul {
   .mobile-logo {
     display: none;
   }
+}
+
+.menu-icon {
+  position: relative;
+  margin-right: 20rem;
+}
+
+.menu-icon .menu-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  margin-right: 20rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-icon span {
+  display: block;
+  width: 1.125em;
+  height: 0.125em;
+  margin-top: 0.188rem;
+  background-color: #fff;
+  margin-right: 20rem;
 }
 </style>
