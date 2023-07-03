@@ -7,10 +7,18 @@
       <div class="menu-label">Menu</div>
     </div>
     <ul :class="{ 'show-menu': isMenuOpen }" @click.stop>
-      <li>Home</li>
-      <li>Menu</li>
-      <li>Blog</li>
-      <li>Find Us</li>
+      <li>
+        <router-link to="/home">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/menu">Menu</router-link>
+      </li>
+      <li>
+        <router-link to="/blog">Blog</router-link>
+      </li>
+      <li>
+        <router-link to="/find-us">Find Us</router-link>
+      </li>
     </ul>
     <div id="logo2">
       <!--#logo_for responsive-->

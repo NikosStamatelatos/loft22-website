@@ -1,3 +1,3 @@
 <template>
- <div></div>
+  <router-link to="/find-us"></router-link>
 </template>

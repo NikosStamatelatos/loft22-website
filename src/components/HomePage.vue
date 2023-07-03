@@ -1,14 +1,23 @@
 <template>
-  <!--/title-->
-  <div id="title">Welcome to Loft 22 Coffee Shop<br /></div>
-  <!-- ***** - Main image - ***** -->
-  <div class="main-image">
-    <img src="../imgs/img3-loft22.jpg" alt="image" />
-    <div class="description">
-      <p>Coffee | Snack</p>
+  <router-link to="/">
+    <!--/title-->
+    <div id="title">Welcome to Loft 22 Coffee Shop<br /></div>
+    <!-- ***** - Main image - ***** -->
+    <div class="main-image">
+      <img src="../imgs/img3-loft22.jpg" alt="image" />
+      <div class="description">
+        <p>Coffee | Snack</p>
+      </div>
+      <content-homepage></content-homepage>
+      <div class="grid_map_full">
+        <!--.grid_map-->
+        <div class="txt-title">Localization:</div>
+        <!--/.txt-title-->
+        <div id="map-canvas"></div>
+        <br />
+      </div>
     </div>
-    <content-homepage></content-homepage>
-  </div>
+  </router-link>
 </template>
 
 <script>

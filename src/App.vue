@@ -1,20 +1,24 @@
 <template>
   <div>
     <the-header></the-header>
-    <home-page></home-page>
+
+    
+
+    <router-view></router-view>
+
     <footer-page></footer-page>
   </div>
 </template>
 
 <script>
 import TheHeader from "./layouts/TheHeader.vue";
-import HomePage from "./components/HomePage.vue";
+
 import FooterPage from "./components/FooterPage.vue";
 
 export default {
   components: {
     TheHeader,
-    HomePage,
+
     FooterPage,
   },
 };
