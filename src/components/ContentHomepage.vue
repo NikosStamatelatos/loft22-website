@@ -64,7 +64,23 @@
   gap: 15px;
   margin-bottom: 5rem;
   margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.txt-title {
+  font-size: 40px;
+}
+
+.txt {
+  font-size: 16px;
 }
 </style>

@@ -335,11 +335,6 @@ h5 a {
   text-align: center;
 }
 
-#credits {
-  color: #999;
-  margin-top: 10px;
-}
-
 .img1:hover {
   box-shadow: #727272 0px 2px 5px;
 }
@@ -1045,12 +1040,6 @@ nav {
   }
 }
 
-#credits {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  margin: 20px;
-}
-
 .img1 {
   width: 100%;
   z-index: 9;
@@ -1180,24 +1169,10 @@ html[xmlns] .slides {
   margin-right: 5px;
 }
 
-.description {
-  position: center;
-  background: #000;
-  color: #fff;
-  z-index: 9999999;
-  bottom: 0px;
-  height: 60px;
-  padding: 10px 20px;
-  text-align: left;
-  margin-top: -60px;
-  opacity: 1;
-  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5); /* Add shadow */
-}
-
 .description p {
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .flexteam > .flex-control-nav {
@@ -2995,7 +2970,8 @@ body.introLoader_preventScroll {
     margin: 0px 0px 30px 0 !important;
     letter-spacing: 2px;
     text-shadow: 0px 0px 19px #2e2e2e;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .title-home {

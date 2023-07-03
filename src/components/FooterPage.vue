@@ -2,7 +2,6 @@
   <div class="grid_map_full">
     <!--.grid_map-->
     <div class="txt-title">Localization:</div>
-
     <!--/.txt-title-->
     <div id="map-canvas"></div>
     <br />
@@ -13,7 +12,7 @@
       <!--.index-blocks-->
       <div class="grid_half">
         <!--.grid_half-->
-        <div class="txt-title">Addres:</div>
+        <div class="txt-title">Address:</div>
         <!--/.txt-title-->
         <!--.icon-->
         <div class="icon_title"><i class="fa fa-users fa-lg"></i></div>
@@ -28,7 +27,7 @@
           <p class="fa fa-phone fa-lg contact_icon"></p>
           <p>
             Information: +222 111 2222 <br />
-            Adverising: +111 222 111 www.example.com
+            Advertising: +111 222 111 www.example.com
           </p>
           <p class="fa fa-envelope fa-lg contact_icon"></p>
           <p>
@@ -114,8 +113,7 @@
                 name="comments"
                 cols="25"
                 rows="6"
-              >
-              </textarea>
+              ></textarea>
             </div>
             <div class="formrow">
               <input class="submit_button" type="submit" value="Submit" />
@@ -125,15 +123,28 @@
         </div>
       </div>
       <!--/.grid_half-->
-
-      <!-- ***** - copyrights - ***** -->
-      <div id="credits">Copyright 2016</div>
     </div>
   </div>
+  <!--/.index-blocks-->
+  <!-- ***** - credits - ***** -->
+  <p id="credits">Copyright 2023</p>
 </template>
 
 <script></script>
 
 <style scoped>
 @import "../styles/style.css";
+
+.wrapper {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#credits {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: px;
+}
 </style>
