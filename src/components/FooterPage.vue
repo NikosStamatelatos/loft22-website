@@ -5,7 +5,7 @@
       <!--.index-blocks-->
       <div class="grid_half">
         <!--.grid_half-->
-        <div class="txt-title">Address:</div>
+        <div class="txt-title">Στοιχεία επιχείρησης:</div>
         <!--/.txt-title-->
         <!--.icon-->
         <div class="icon_title"><i class="fa fa-users fa-lg"></i></div>
@@ -13,10 +13,7 @@
         <!--.txt-->
         <div class="txt contact_new">
           <p class="fa fa-home fa-lg contact_icon"></p>
-          <p>
-            123 Main Street city, AB 0123<br />
-            345 Not Main Street city, CD 4567
-          </p>
+          <p>Κύπρου 80 Νίκαια, 18451<br /></p>
           <p class="fa fa-phone fa-lg contact_icon"></p>
           <p>
             Information: +222 111 2222 <br />

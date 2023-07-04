@@ -8,16 +8,16 @@
     </div>
     <ul :class="{ 'show-menu': isMenuOpen }" @click.stop>
       <li>
-        <router-link to="/home">Home</router-link>
+        <router-link to="/arxiki">ΑΡΧΙΚΗ</router-link>
       </li>
       <li>
-        <router-link to="/menu">Menu</router-link>
+        <router-link to="/menu">ΜΕΝΟΥ</router-link>
       </li>
       <li>
-        <router-link to="/blog">Blog</router-link>
+        <router-link to="/etaireia">ΕΤΑΙΡΕΙΑ</router-link>
       </li>
       <li>
-        <router-link to="/find-us">Find Us</router-link>
+        <router-link to="/store">ΚΑΤΑΣΤΗΜΑ</router-link>
       </li>
     </ul>
     <div id="logo2">

@@ -26,6 +26,9 @@ export default {
   components: {
     ContentHomepage,
   },
+  mounted() {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component is mounted
+  },
 };
 </script>
 

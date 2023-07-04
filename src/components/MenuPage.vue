@@ -241,6 +241,14 @@
   <!--/.txt-->
 </template>
 
+<script>
+export default {
+  mounted() {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component is mounted
+  },
+};
+</script>
+
 <style>
 .grid_8 {
   display: center;
@@ -248,8 +256,8 @@
   justify-content: center;
   text-align: center;
   margin-bottom: 20rem;
-  margin-left: 40rem;
-  margin-right: 40rem;
+  margin-left: 30rem;
+  margin-right: 30rem;
 }
 
 .grid-container {
