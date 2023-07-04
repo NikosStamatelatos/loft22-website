@@ -5,7 +5,7 @@
       <!--.index-blocks-->
       <div class="grid_half">
         <!--.grid_half-->
-        <div class="txt-title">Στοιχεία επιχείρησης:</div>
+        <div class="txt-title">Address:</div>
         <!--/.txt-title-->
         <!--.icon-->
         <div class="icon_title"><i class="fa fa-users fa-lg"></i></div>
