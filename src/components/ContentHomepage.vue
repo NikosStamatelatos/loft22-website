@@ -62,10 +62,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 @media screen and (max-width: 768px) {

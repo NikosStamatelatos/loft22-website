@@ -1,26 +1,19 @@
 <template>
-  <router-link to="/menu">
-    <div class="title-home">
-      <div></div>
-      <p>MENU CARD</p>
-      <div></div>
-    </div>
-    <!--/.title home-->
+  <router-link to="/menu"></router-link>
+  <div class="grid-container">
     <div class="grid_8">
       <!--.grid_8-->
       <div class="txt-title">Breakfast</div>
-
       <!--.icon-->
       <div class="icon_title"><i class="fa fa-coffee fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a class="magnific imgcard" href="images/breakfast.jpg">
-        <img src="images/breakfast.jpg" class="img1" alt="Omelette" />
+      <a class="magnific imgcard" href="imgs/breakfast.jpg">
+        <img src="../imgs/breakfast.jpg" class="img1" alt="Omelette" />
       </a>
       <!--/.txt-title-->
       <div class="txt">
         <!--.txt-->
-
         <ul>
           <li>
             <h2>Eggs</h2>
@@ -61,7 +54,7 @@
       <!--/.icon-->
       <!-- image gous here-->
       <a class="magnific imgcard" href="images/drinks.jpg">
-        <img src="images/drinks.jpg" class="img1" alt="Omelette" />
+        <img src="../imgs/drinks.jpg" class="img1" alt="Omelette" />
       </a>
       <!--/.txt-title-->
       <div class="txt">
@@ -93,17 +86,14 @@
         </ul>
       </div>
       <!--/.txt-->
-    </div>
-    <!--/.grid_8-->
-    <div class="grid_8">
-      <!--.grid_8-->
+
       <div class="txt-title">Business Lunch</div>
       <!--.icon-->
       <div class="icon_title"><i class="fa fa-briefcase fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
       <a class="magnific imgcard" href="images/lunch.jpg">
-        <img src="images/lunch.jpg" class="img1" alt="Omelette" />
+        <img src="../imgs/lunch.jpg" class="img1" alt="Omelette" />
       </a>
       <!--/.txt-title-->
       <div class="txt">
@@ -160,10 +150,6 @@
         </ul>
       </div>
       <!--.txt-->
-    </div>
-    <!--/.grid_8-->
-    <div class="grid_8">
-      <!--.grid_8-->
       <div class="txt-title">Dinner</div>
       <!--.icon-->
       <div class="icon_title"><i class="fa fa-cutlery fa-lg"></i></div>
@@ -172,9 +158,9 @@
       <a
         class="magnific imgcard"
         title="Caption. Can be aligned to any side and contain any HTML."
-        href="images/dinner.jpg"
+        href="imgs/dinner.jpg"
       >
-        <img src="images/dinner.jpg" class="img1" alt="Omelette" />
+        <img src="../imgs/dinner.jpg" class="img1" alt="Omelette" />
       </a>
       <!--/.txt-title-->
       <div class="txt">
@@ -219,10 +205,9 @@
       <div class="icon_title"><i class="fa fa-birthday-cake fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a class="magnific imgcard" href="images/dessert.jpg">
-        <img src="images/dessert.jpg" class="img1" alt="Omelette" />
+      <a class="magnific imgcard" href="imgs/dessert.jpg">
+        <img src="../imgs/dessert.jpg" class="img1" alt="Omelette" />
       </a>
-
       <div class="txt">
         <!--.txt-->
         <ul>
@@ -251,7 +236,72 @@
           </li>
         </ul>
       </div>
-      <!--/.txt-->
     </div>
-  </router-link>
+  </div>
+  <!--/.txt-->
 </template>
+
+<style>
+.grid_8 {
+  display: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20rem;
+  margin-left: 40rem;
+  margin-right: 40rem;
+}
+
+.grid-container {
+  padding-top: 7rem; /* Adjust the value as needed */
+}
+
+.txt {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  /* width: 50%; */
+}
+
+.cartprice {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  margin-top: -1px;
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for mobile devices with a maximum width of 480px */
+  .grid_8 {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for devices with a width between 481px and 768px */
+  .grid_8 {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -5rem;
+  }
+}
+
+.img1 {
+  width: 100%; /* Adjusted to occupy the entire width of the container */
+  max-width: 700px; /* Set a maximum width for larger screens */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+</style>

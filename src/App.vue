@@ -1,9 +1,6 @@
 <template>
   <div>
     <the-header></the-header>
-
-    
-
     <router-view></router-view>
 
     <footer-page></footer-page>
@@ -18,7 +15,6 @@ import FooterPage from "./components/FooterPage.vue";
 export default {
   components: {
     TheHeader,
-
     FooterPage,
   },
 };

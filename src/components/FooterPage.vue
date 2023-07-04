@@ -120,7 +120,6 @@
   </div>
   <!--/.index-blocks-->
   <!-- ***** - credits - ***** -->
-  <p id="credits">Copyright 2023</p>
 </template>
 
 <script></script>
@@ -129,15 +128,9 @@
 @import "../styles/style.css";
 
 .wrapper {
-  min-height: calc(100vh - 100px);
+  min-height: calc(70vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#credits {
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: px;
 }
 </style>
