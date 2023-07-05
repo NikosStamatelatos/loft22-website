@@ -802,11 +802,11 @@ nav {
   width: 100%;
 }
 
-#social {
+/* #social {
   float: right;
   margin-top: 10px;
   letter-spacing: 10px;
-}
+} */
 
 .social a {
   opacity: 0.9;
@@ -841,6 +841,7 @@ nav {
   display: table;
   z-index: 99;
   position: relative;
+  margin-bottom: -7px;
 }
 
 .icon_title i {
@@ -1427,9 +1428,10 @@ ul.ourHolder li.item {
 
 .social a {
   padding: 10px;
-  background: #000;
+  /* background: #000; */
   color: #fff;
   margin-right: 1px;
+  justify-content: center;
 }
 
 .full_center {
@@ -2143,7 +2145,7 @@ textarea {
   font-size: 16px;
   -webkit-appearance: none;
   /* for box shadows to show on iOS */
-  font-family: "Pt Sans Narrow";
+  /* font-family: "Pt Sans Narrow"; */
 }
 
 input:focus,
@@ -2181,10 +2183,11 @@ textarea:focus {
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
   transition: 0.2s linear;
+  font-family: "Open Sans", sans-serif;
 }
 
 .newinput_message {
-  height: 76px;
+  height: 70px;
 }
 
 .newinput {

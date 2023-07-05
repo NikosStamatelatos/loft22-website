@@ -256,8 +256,9 @@ export default {
   justify-content: center;
   text-align: center;
   margin-bottom: 20rem;
-  margin-left: 30rem;
-  margin-right: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; /* Set a maximum width for the grid container */
 }
 
 .grid-container {

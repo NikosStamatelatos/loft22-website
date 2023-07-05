@@ -8,38 +8,48 @@
         <div class="txt-title">Address:</div>
         <!--/.txt-title-->
         <!--.icon-->
-        <div class="icon_title"><i class="fa fa-users fa-lg"></i></div>
+        <div class="icon_title"><i class="fa fa-store fa-beat"></i></div>
         <!--/.icon-->
         <!--.txt-->
         <div class="txt contact_new">
-          <p class="fa fa-home fa-lg contact_icon"></p>
-          <p>Κύπρου 80 Νίκαια, 18451<br /></p>
-          <p class="fa fa-phone fa-lg contact_icon"></p>
-          <p>
-            Information: +222 111 2222 <br />
-            Advertising: +111 222 111 www.example.com
-          </p>
-          <p class="fa fa-envelope fa-lg contact_icon"></p>
-          <p>
-            info@example.com <br />
-            heremail@example.com
-          </p>
+          <form @submit.prevent="submitForm">
+            <div class="contact_item">
+              <p class="fa fa-location-dot fa-lg contact_icon"></p>
+              <p>Κύπρου 80 Νίκαια, 18451</p>
+            </div>
+            <div class="contact_item">
+              <p class="fa fa-phone fa-lg contact_icon"></p>
+              <div>
+                <p>2160046005</p>
+              </div>
+            </div>
+            <div class="contact_item">
+              <p class="fa fa-envelope fa-lg contact_icon"></p>
+              <div>
+                <p>loft22@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact_item">
+              <p class="fa fa-link fa-lg contact_icon"></p>
+              <div>
+                <p>loft22.gr</p>
+              </div>
+            </div>
+          </form>
         </div>
         <!--/.txt-->
-        <div class="txt-title">Find Us:</div>
+        <div class="social">
+          <p class="txt-title">Find Us:</p>
+          <a href="#" class="fa fa-facebook fa-2x"></a>
+          <a href="#" class="fa fa-instagram fa-2x"></a>
+        </div>
+
         <!--/.txt-title-->
         <!-- ***** - social icons - ***** -->
-        <div class="txt">
-          <div class="social full_center">
-            <a href="#" class="fa fa-google-plus fa-2x"> </a>
-            <a href="#" class="fa fa-behance fa-2x"> </a>
-            <a href="#" class="fa fa-facebook fa-2x"> </a>
-            <a href="#" class="fa fa-youtube-play fa-2x"> </a>
-            <a href="#" class="fa fa-skype fa-2x"> </a>
-            <a href="#" class="fa fa-twitter fa-2x"> </a>
-            <a href="#" class="fa fa-pinterest fa-2x"> </a>
-            <div class="clear"></div>
-          </div>
+        <!-- <div class="txt"> -->
+        <div class="social full_center">
+          <!-- <div class="clear"></div> -->
+          <!-- </div> -->
         </div>
         <!--/.social-->
 
@@ -51,13 +61,13 @@
         <div class="txt-title">Send me mail</div>
         <!--/.txt-title-->
         <!--.icon-->
-        <div class="icon_title"><i class="fa fa-users fa-lg"></i></div>
+        <div class="icon_title"><i class="fa fa-envelope fa-beat"></i></div>
         <!--/.icon-->
         <!--.txt-->
         <div class="txt">
           <form id="contactForm" action="#">
             <div class="formrow">
-              <label class="newlabel" for="first_name"> First Name * </label>
+              <label class="newlabel" for="first_name"> Όνομα </label>
               <input
                 class="newinput"
                 type="text"
@@ -67,7 +77,7 @@
               />
             </div>
             <div class="formrow">
-              <label class="newlabel" for="last_name"> Last Name * </label>
+              <label class="newlabel" for="last_name"> Επίθετο </label>
               <input
                 class="newinput"
                 type="text"
@@ -77,7 +87,7 @@
               />
             </div>
             <div class="formrow">
-              <label class="newlabel" for="email"> Email * </label>
+              <label class="newlabel" for="email"> Email </label>
               <input
                 class="newinput"
                 type="text"
@@ -87,7 +97,7 @@
               />
             </div>
             <div class="formrow">
-              <label class="newlabel" for="telephone"> Phone </label>
+              <label class="newlabel" for="telephone"> Τηλέφωνο </label>
               <input
                 class="newinput"
                 type="text"
@@ -97,7 +107,7 @@
               />
             </div>
             <div class="formrow_message">
-              <label class="newlabel" for="comments"> Message * </label>
+              <label class="newlabel" for="comments"> Μήνυμα </label>
               <textarea
                 class="newinput_message"
                 name="comments"
@@ -109,6 +119,12 @@
               <input class="submit_button" type="submit" value="Submit" />
             </div>
           </form>
+          <div v-if="errorMessage" class="error_message">
+            {{ errorMessage }}
+          </div>
+          <div v-if="successMessage" class="success_message">
+            {{ successMessage }}
+          </div>
           <div id="contactMsg"></div>
         </div>
       </div>
@@ -119,7 +135,34 @@
   <!-- ***** - credits - ***** -->
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+      errorMessage: "",
+      successMessage: "",
+    };
+  },
+  methods: {
+    submitForm() {
+      if (this.firstName === "" || this.lastName === "") {
+        this.errorMessage = "Please fill in all required fields.";
+        this.successMessage = "";
+      } else {
+        // Form validation passed, you can proceed with form submission or further processing
+        this.errorMessage = "Oops";
+        this.successMessage = "It's ok";
+        // Here, you can submit the form or perform any other actions
+      }
+    },
+  },
+};
+</script>
 
 <style scoped>
 @import "../styles/style.css";
@@ -129,5 +172,40 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  text-align: left;
+}
+
+.contact_item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.contact_icon {
+  margin-right: 15px;
+  margin-top: 10rem;
+}
+.contact_item div {
+  font-size: 14px; /* Adjust the font size for the information */
+  display: flex;
+  align-items: center;
+}
+
+.contact_item p {
+  font-size: 15px; /* Adjust the font size for the information */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.social {
+  text-align: center;
 }
 </style>
