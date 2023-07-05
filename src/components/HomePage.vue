@@ -1,6 +1,6 @@
 <template>
   <!--/title-->
-  <div id="title">Welcome to Loft 22 Coffee Shop<br /></div>
+  <div id="title">Welcome to Loft 22 Coffee Shop!<br /></div>
   <!-- ***** - Main image - ***** -->
   <div class="main-image">
     <img src="../imgs/img3-loft22.jpg" alt="image" />
@@ -37,7 +37,7 @@ export default {
 
 @import "../styles/style.css";
 #title {
-  font-family: "Qwigley", cursive;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   /* margin-bottom: 10px; */
   color: #9a845d;
@@ -74,7 +74,7 @@ export default {
 @media screen and (max-width: 480px) {
   /* Styles for mobile devices with a maximum width of 480px */
   #title {
-    font-size: 35px;
+    font-size: 32px;
     /* margin-bottom: 5px; */
     margin-top: 5px !important;
   }
@@ -83,7 +83,7 @@ export default {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Styles for devices with a width between 481px and 768px */
   #title {
-    font-size: 36px;
+    font-size: 32px;
     /* margin-bottom: 5px; */
   }
 }
@@ -91,7 +91,7 @@ export default {
 @media screen and (min-width: 769px) {
   /* Styles for devices with a width larger than 769px */
   #title {
-    font-size: 80px;
+    font-size: 35px;
     /* margin-bottom: 10px; */
   }
 }

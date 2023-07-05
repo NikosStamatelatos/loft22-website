@@ -927,8 +927,8 @@ nav {
 }
 
 .txt-title {
-  font-size: 40px;
-  font-family: "Qwigley", cursive;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 7px;
@@ -2204,6 +2204,7 @@ textarea:focus {
   width: 30%;
   margin-left: 36%;
   display: block;
+  cursor: pointer;
 }
 
 .contact_icon {

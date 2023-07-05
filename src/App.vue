@@ -2,7 +2,6 @@
   <div>
     <the-header></the-header>
     <router-view></router-view>
-
     <footer-page></footer-page>
   </div>
 </template>

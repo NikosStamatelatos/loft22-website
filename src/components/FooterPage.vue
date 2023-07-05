@@ -1,4 +1,12 @@
 <template>
+  <empty-field-message
+    :open="inputIsInvalid"
+    title="Κάποιο απο τα πεδία είναι κενά!"
+    @close="inputIsInvalid = false"
+  >
+    <p class="textEmpty">Παρακαλούμε συμπληρώστε όλα τα πεδία!</p>
+    <button class="ok-button" @click="inputIsInvalid = false">OΚ</button>
+  </empty-field-message>
   <!--/.index-blocks-->
   <div class="wrapper">
     <div class="index-blocks">
@@ -56,79 +64,75 @@
         <!--/.txt-->
       </div>
       <!--/.grid_half-->
-      <div class="grid_half">
-        <!--.grid_half-->
-        <div class="txt-title">Send me mail</div>
-        <!--/.txt-title-->
-        <!--.icon-->
-        <div class="icon_title"><i class="fa fa-envelope fa-beat"></i></div>
-        <!--/.icon-->
-        <!--.txt-->
-        <div class="txt">
-          <form id="contactForm" action="#">
-            <div class="formrow">
-              <label class="newlabel" for="first_name"> Όνομα </label>
-              <input
-                class="newinput"
-                type="text"
-                name="first_name"
-                maxlength="50"
-                size="30"
-              />
+      <form @submit.prevent="newInput">
+        <div class="grid_half">
+          <!--.grid_half-->
+          <div class="txt-title">Send me mail</div>
+          <!--/.txt-title-->
+          <!--.icon-->
+          <div class="icon_title"><i class="fa fa-envelope fa-beat"></i></div>
+          <!--/.icon-->
+          <!--.txt-->
+          <div class="txt">
+            <div id="contactForm" action="#">
+              <div class="formrow">
+                <label class="newlabel" for="first_name"> Όνομα </label>
+                <input
+                  class="newinput"
+                  type="text"
+                  name="first_name"
+                  maxlength="50"
+                  size="30"
+                />
+              </div>
+              <div class="formrow">
+                <label class="newlabel" for="last_name"> Επίθετο </label>
+                <input
+                  class="newinput"
+                  type="text"
+                  name="last_name"
+                  maxlength="50"
+                  size="30"
+                />
+              </div>
+              <div class="formrow">
+                <label class="newlabel" for="email"> Email </label>
+                <input
+                  class="newinput"
+                  type="text"
+                  name="email"
+                  maxlength="80"
+                  size="30"
+                />
+              </div>
+              <div class="formrow">
+                <label class="newlabel" for="telephone"> Τηλέφωνο </label>
+                <input
+                  class="newinput"
+                  type="text"
+                  name="telephone"
+                  maxlength="30"
+                  size="30"
+                />
+              </div>
+              <div class="formrow_message">
+                <label class="newlabel" for="comments"> Μήνυμα </label>
+                <textarea
+                  class="newinput_message"
+                  name="comments"
+                  cols="25"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div class="formrow">
+                <input class="submit_button" type="submit" value="Submit" />
+              </div>
             </div>
-            <div class="formrow">
-              <label class="newlabel" for="last_name"> Επίθετο </label>
-              <input
-                class="newinput"
-                type="text"
-                name="last_name"
-                maxlength="50"
-                size="30"
-              />
-            </div>
-            <div class="formrow">
-              <label class="newlabel" for="email"> Email </label>
-              <input
-                class="newinput"
-                type="text"
-                name="email"
-                maxlength="80"
-                size="30"
-              />
-            </div>
-            <div class="formrow">
-              <label class="newlabel" for="telephone"> Τηλέφωνο </label>
-              <input
-                class="newinput"
-                type="text"
-                name="telephone"
-                maxlength="30"
-                size="30"
-              />
-            </div>
-            <div class="formrow_message">
-              <label class="newlabel" for="comments"> Μήνυμα </label>
-              <textarea
-                class="newinput_message"
-                name="comments"
-                cols="25"
-                rows="6"
-              ></textarea>
-            </div>
-            <div class="formrow">
-              <input class="submit_button" type="submit" value="Submit" />
-            </div>
-          </form>
-          <div v-if="errorMessage" class="error_message">
-            {{ errorMessage }}
+            <div id="contactMsg"></div>
           </div>
-          <div v-if="successMessage" class="success_message">
-            {{ successMessage }}
-          </div>
-          <div id="contactMsg"></div>
         </div>
-      </div>
-      <!--/.grid_half-->
+        <!--/.grid_half-->
+      </form>
     </div>
   </div>
   <!--/.index-blocks-->
@@ -136,28 +140,29 @@
 </template>
 
 <script>
+import EmptyFieldMessage from "../components/EmptyFieldMessage.vue";
+
 export default {
+  components: {
+    EmptyFieldMessage,
+  },
   data() {
     return {
+      id: "",
       firstName: "",
       lastName: "",
       email: "",
       phone: "",
       message: "",
-      errorMessage: "",
-      successMessage: "",
+      inputIsInvalid: false,
     };
   },
   methods: {
-    submitForm() {
-      if (this.firstName === "" || this.lastName === "") {
-        this.errorMessage = "Please fill in all required fields.";
-        this.successMessage = "";
+    newInput() {
+      if (!this.name || !this.email || !this.phoneNumber || !this.date) {
+        this.inputIsInvalid = true;
       } else {
-        // Form validation passed, you can proceed with form submission or further processing
-        this.errorMessage = "Oops";
-        this.successMessage = "It's ok";
-        // Here, you can submit the form or perform any other actions
+        // Perform the desired action when all fields are filled
       }
     },
   },
@@ -207,5 +212,21 @@ export default {
 
 .social {
   text-align: center;
+}
+
+.ok-button {
+  color: white;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #474747;
+  border: 1px solid #474747;
+  transition: all 0.3s;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+}
+
+.ok-button:active {
+  color: #ffffff;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 </style>
