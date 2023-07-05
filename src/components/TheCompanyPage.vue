@@ -3,6 +3,9 @@
   <div class="image-container">
     <div class="company-paragraph">
       <img src="../imgs/company.jpg" class="company-img" alt="Company" />
+      <div class="first-paragraph">
+        <p>Kalispera</p>
+      </div>
     </div>
   </div>
   <p>
@@ -13,9 +16,7 @@
 <style scoped>
 .company-paragraph {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .image-container {
@@ -40,5 +41,10 @@
 /* On hover, apply the desired zoom level or transform */
 .company-img:hover {
   transform: scale(1.2); /* Adjust the scale value for zooming in or out */
+}
+
+.first-paragraph {
+  font-size: 20px;
+  margin-left: 8rem; /* Adjust the margin as needed */
 }
 </style>
