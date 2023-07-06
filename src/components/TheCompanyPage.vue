@@ -1,16 +1,40 @@
 <template>
   <router-link to="/etaireia"></router-link>
-  <div class="image-container">
-    <div class="company-paragraph">
-      <img src="../imgs/company.jpg" class="company-img" alt="Company" />
-      <div class="first-paragraph">
-        <p>Kalispera</p>
-      </div>
+  <div class="company-paragraph">
+    <img src="../imgs/company.jpg" class="company-img" alt="Company" />
+    <div class="text1">
+      <p>
+        Από την αρχή του ταξιδιού μας στον κόσμο του πολύτιμου καρπού του καφέ
+        το 2003, ο στόχος μας παραμένει ο ίδιος: Να μοιραστούμε σε όλον τον
+        κόσμο την αγάπη και την τεχνογνωσία μας για τον ποιοτικό, απολαυστικό
+        καφέ σε ένα καλαίσθητο και πολυτελές περιβάλλον.
+      </p>
+      <p>
+        Ξεκινώντας από την Ελλάδα και με ήδη ισχυρή παρουσία στην Κύπρο και την
+        Αίγυπτο αλλά και στη Σαουδική Αραβία, συνεχίζουμε με σταθερά βήματα προς
+        το όραμά μας που είναι: να καθιερωθούμε σαν η κορυφαία αλυσίδα καφέ όπου
+        ο κόσμος να μπορεί να απολαμβάνει μια αναβαθμισμένη εμπειρία σε κάθε
+        γωνιά του πλανήτη.
+      </p>
     </div>
   </div>
-  <p>
-    <!-- Your paragraph content -->
-  </p>
+  <div class="company-paragraph">
+    <img src="../imgs/company2.jpg" class="company-img2" alt="Company" />
+    <div class="text2">
+      <p>
+        Από το πρώτο κατάστημα Coffee Berry μέχρι και σήμερα μοιραζόμαστε την
+        τεχνογνωσία και την αγάπη μας για τον καφέ με όλους εσάς.
+      </p>
+      <p>
+        Δεσμευόμαστε ότι, με επίκεντρο τον καφέ, προσφέρουμε διαρκώς μια
+        μοναδική εμπειρία, επιλέγοντας ό,τι είναι εξαιρετικό, ενσωματώνοντάς το
+        στην καθημερινότητά μας. Όχι μόνο στους πελάτες μας ή στους πελάτες των
+        συνεργατών μας αλλά σε όλους όσοι η εμπειρία που απολαμβάνουν την
+        οποιαδήποτε στιγμή στην ημέρα τους, συνδέεται με το brand μας Coffee
+        Berry – Tasteful Living.
+      </p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -19,17 +43,19 @@
   align-items: center;
 }
 
-.image-container {
+/* .image-container {
   width: 50%;
   max-height: 500px;
   overflow: hidden;
   position: relative;
-}
+} */
 
 .company-img {
   margin-left: 15rem;
   margin-top: 10rem;
-  width: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: 30rem;
   max-height: 500px;
   object-fit: cover;
   transform: scale(1); /* Initial scale value */
@@ -43,8 +69,42 @@
   transform: scale(1.2); /* Adjust the scale value for zooming in or out */
 }
 
-.first-paragraph {
+.company-img2 {
+  margin-left: 15rem;
+  margin-top: 10rem;
+  width: 300px;
+  height: 300px;
+  margin-left: 30rem;
+  max-height: 500px;
+  object-fit: cover;
+  transform: scale(1); /* Initial scale value */
+
+  /* Add transitions for smooth zooming */
+  transition: transform 0.3s ease-out;
+}
+
+/* On hover, apply the desired zoom level or transform */
+.company-img2:hover {
+  transform: scale(1.2); /* Adjust the scale value for zooming in or out */
+}
+
+.text1 {
   font-size: 20px;
-  margin-left: 8rem; /* Adjust the margin as needed */
+  margin-left: 3rem; /* Adjust the margin as needed */
+  margin-top: 8rem;
+  text-align: left;
+  margin-right: 20rem;
+}
+
+.text2 {
+  font-size: 20px;
+  margin-left: 3rem; /* Adjust the margin as needed */
+  margin-top: 8rem;
+  text-align: left;
+  margin-right: 20rem;
+}
+
+p {
+  margin-top: 3rem;
 }
 </style>

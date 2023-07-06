@@ -13,7 +13,7 @@
       <!--.index-blocks-->
       <div class="grid_half">
         <!--.grid_half-->
-        <div class="txt-title">Address:</div>
+        <div class="txt-title">Στοιχεία επιχείρησης</div>
         <!--/.txt-title-->
         <!--.icon-->
         <div class="icon_title"><i class="fa fa-store fa-beat"></i></div>
@@ -47,7 +47,7 @@
         </div>
         <!--/.txt-->
         <div class="social">
-          <p class="txt-title">Find Us:</p>
+          <p class="txt-title">Βρείτε μας στα Social</p>
           <a href="#" class="fa fa-facebook fa-2x"></a>
           <a href="#" class="fa fa-instagram fa-2x"></a>
         </div>
@@ -67,7 +67,7 @@
       <form @submit.prevent="newInput">
         <div class="grid_half">
           <!--.grid_half-->
-          <div class="txt-title">Send me mail</div>
+          <div class="txt-title">Επικοινωνήστε μαζί μας</div>
           <!--/.txt-title-->
           <!--.icon-->
           <div class="icon_title"><i class="fa fa-envelope fa-beat"></i></div>
