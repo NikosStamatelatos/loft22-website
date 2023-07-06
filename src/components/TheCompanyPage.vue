@@ -1,5 +1,6 @@
 <template>
   <router-link to="/etaireia"></router-link>
+  <div class="container"></div>
   <div class="company-paragraph">
     <img src="../imgs/company.jpg" class="company-img" alt="Company" />
     <div class="text1">
@@ -19,7 +20,7 @@
     </div>
   </div>
   <div class="company-paragraph">
-    <img src="../imgs/company2.jpg" class="company-img2" alt="Company" />
+    <img src="../imgs/company2.jpg" class="company-img2" alt="Comp`any" />
     <div class="text2">
       <p>
         Από το πρώτο κατάστημα Coffee Berry μέχρι και σήμερα μοιραζόμαστε την
@@ -37,25 +38,25 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component is mounted
+  },
+};
+</script>
+
 <style scoped>
 .company-paragraph {
   display: flex;
   align-items: center;
 }
 
-/* .image-container {
-  width: 50%;
-  max-height: 500px;
-  overflow: hidden;
-  position: relative;
-} */
-
 .company-img {
-  margin-left: 15rem;
   margin-top: 10rem;
   width: 300px;
   height: 300px;
-  margin-left: 30rem;
+  margin-left: 25rem;
   max-height: 500px;
   object-fit: cover;
   transform: scale(1); /* Initial scale value */
@@ -70,11 +71,10 @@
 }
 
 .company-img2 {
-  margin-left: 15rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 300px;
   height: 300px;
-  margin-left: 30rem;
+  margin-left: 25rem;
   max-height: 500px;
   object-fit: cover;
   transform: scale(1); /* Initial scale value */
@@ -91,7 +91,7 @@
 .text1 {
   font-size: 20px;
   margin-left: 3rem; /* Adjust the margin as needed */
-  margin-top: 8rem;
+  margin-top: 7rem;
   text-align: left;
   margin-right: 20rem;
 }
@@ -99,12 +99,39 @@
 .text2 {
   font-size: 20px;
   margin-left: 3rem; /* Adjust the margin as needed */
-  margin-top: 8rem;
+  margin-top: 5rem;
   text-align: left;
   margin-right: 20rem;
 }
 
 p {
   margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .company-img,
+  .company-img2 {
+    width: 300px;
+    height: 300px;
+    max-height: 400px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-img,
+  .company-img2 {
+    width: 150px;
+    max-height: 300px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 16px;
+  }
 }
 </style>
