@@ -821,6 +821,7 @@ nav {
 
 .index-blocks {
   width: 100%;
+  flex-direction: column;
 }
 
 .txt ul {

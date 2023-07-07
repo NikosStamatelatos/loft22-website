@@ -1,12 +1,10 @@
 <template>
-  <empty-field-message
+  <empty-field-newsletter
     :open="inputIsInvalid"
-    title="Κάποιο απο τα πεδία είναι κενά!"
+    title="Παρακαλούμε συμπληρώστε το πεδίο με το mail σας!"
     @close="inputIsInvalid = false"
   >
-    <p class="textEmpty">Παρακαλούμε συμπληρώστε όλα τα πεδία!</p>
-    <button class="ok-button" @click="inputIsInvalid = false">OΚ</button>
-  </empty-field-message>
+  </empty-field-newsletter>
   <!--/.index-blocks-->
   <div class="wrapper">
     <div class="index-blocks">
@@ -119,11 +117,11 @@
 </template>
 
 <script>
-import EmptyFieldMessage from "../components/EmptyFieldMessage.vue";
+import EmptyFieldNewsletter from "../components/EmptyFieldNewsletter.vue";
 
 export default {
   components: {
-    EmptyFieldMessage,
+    EmptyFieldNewsletter,
   },
   data() {
     return {
@@ -193,22 +191,7 @@ export default {
 
 .social {
   text-align: center;
-}
-
-.ok-button {
-  color: white;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #474747;
-  border: 1px solid #474747;
-  transition: all 0.3s;
-  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
-}
-
-.ok-button:active {
-  color: #ffffff;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  margin-bottom: 2rem;
 }
 
 .email {
