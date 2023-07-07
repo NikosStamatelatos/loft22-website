@@ -1432,6 +1432,7 @@ ul.ourHolder li.item {
   color: #fff;
   margin-right: 1px;
   justify-content: center;
+  display: center;
 }
 
 .full_center {
@@ -2199,7 +2200,7 @@ textarea:focus {
   opacity: 0.9;
 }
 
-.submit_button {
+.registration_button {
   height: 40px;
   width: 30%;
   margin-left: 36%;
@@ -2221,6 +2222,7 @@ textarea:focus {
 
 #contactForm {
   padding-top: 22px;
+  padding-bottom: 2px;
 }
 
 #ContactMsg {

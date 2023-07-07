@@ -60,45 +60,30 @@
           <!-- </div> -->
         </div>
         <!--/.social-->
-
         <!--/.txt-->
       </div>
       <!--/.grid_half-->
       <form @submit.prevent="newInput">
         <div class="grid_half">
           <!--.grid_half-->
-          <div class="txt-title">Επικοινωνήστε μαζί μας</div>
+          <div class="txt-title">Newsletter</div>
           <!--/.txt-title-->
           <!--.icon-->
           <div class="icon_title"><i class="fa fa-envelope fa-beat"></i></div>
           <!--/.icon-->
           <!--.txt-->
-          <div class="txt">
+          <div class="txt-newsletter">
             <div id="contactForm" action="#">
               <div class="formrow">
-                <label class="newlabel" for="first_name"> Όνομα </label>
-                <input
-                  class="newinput"
-                  type="text"
-                  name="first_name"
-                  maxlength="50"
-                  size="30"
-                />
+                <p>
+                  Εγγραφείτε στο newsletter μας και ενημερωθείτε πρώτοι για τις
+                  προσφορές μας!
+                </p>
               </div>
-              <div class="formrow">
-                <label class="newlabel" for="last_name"> Επίθετο </label>
+              <div class="email">
                 <input
                   class="newinput"
-                  type="text"
-                  name="last_name"
-                  maxlength="50"
-                  size="30"
-                />
-              </div>
-              <div class="formrow">
-                <label class="newlabel" for="email"> Email </label>
-                <input
-                  class="newinput"
+                  placeholder="Το email σας"
                   type="text"
                   name="email"
                   maxlength="80"
@@ -106,29 +91,23 @@
                 />
               </div>
               <div class="formrow">
-                <label class="newlabel" for="telephone"> Τηλέφωνο </label>
                 <input
-                  class="newinput"
-                  type="text"
-                  name="telephone"
-                  maxlength="30"
-                  size="30"
+                  class="registration_button"
+                  type="submit"
+                  value="Εγγραφή"
                 />
               </div>
-              <div class="formrow_message">
-                <label class="newlabel" for="comments"> Μήνυμα </label>
-                <textarea
-                  class="newinput_message"
-                  name="comments"
-                  cols="25"
-                  rows="6"
-                ></textarea>
-              </div>
               <div class="formrow">
-                <input class="submit_button" type="submit" value="Submit" />
+                <p>
+                  Θα χρησιμοποιηθεί σύμφωνα με την
+                  <a class="policy-hyperlink" href="/menu"
+                    >Πολιτική Απορρήτου</a
+                  >
+                  μας
+                </p>
               </div>
             </div>
-            <div id="contactMsg"></div>
+            <!-- <div id="contactMsg"></div> -->
           </div>
         </div>
         <!--/.grid_half-->
@@ -179,11 +158,13 @@ export default {
   justify-content: space-between;
 }
 
-.txt {
+.txt-newsletter {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the left */
-  text-align: left;
+  text-align: center;
+  background: #000;
+  padding-bottom: 0.7rem;
 }
 
 .contact_item {
@@ -228,5 +209,33 @@ export default {
 .ok-button:active {
   color: #ffffff;
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.email {
+  height: 50px;
+  display: flex;
+  justify-content: center; /* Align the input horizontally to the center */
+  align-items: center; /* Align the input vertically to the center */
+}
+
+.email_message {
+  height: 90px;
+  display: block;
+}
+
+.newinput::placeholder {
+  font-size: 15px; /* Adjust the font size for the placeholder text */
+  color: #ffffff; /* Adjust the color for the placeholder text */
+}
+
+.newinput {
+  width: 90%; /* Set the width to 100% to expand the input field */
+  height: 40px; /* Adjust the height of the input field */
+  font-size: 15px; /* Adjust the font size of the input text */
+  padding: 5px; /* Adjust the padding around the input text */
+}
+
+.policy-hyperlink {
+  color: rgb(129, 128, 128);
 }
 </style>
