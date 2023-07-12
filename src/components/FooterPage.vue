@@ -73,7 +73,7 @@
           <div class="txt-newsletter">
             <div id="contactForm" action="#">
               <div class="formrow">
-                <p>
+                <p class="subscribe-newsletter">
                   Εγγραφείτε στο newsletter μας και ενημερωθείτε πρώτοι για τις
                   προσφορές μας!
                 </p>
@@ -110,6 +110,10 @@
         </div>
         <!--/.grid_half-->
       </form>
+      <div class="footer-credits">
+        &copy; Copyright 2023 Loft22. All Rights Reserved. Designed by: Nick
+        Stamatelatos
+      </div>
     </div>
   </div>
   <!--/.index-blocks-->
@@ -159,7 +163,7 @@ export default {
 .txt-newsletter {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the left */
+  align-items: center; /* Align items to the left */
   text-align: center;
   background: #000;
   padding-bottom: 0.7rem;
@@ -220,5 +224,28 @@ export default {
 
 .policy-hyperlink {
   color: rgb(129, 128, 128);
+}
+
+.footer-credits {
+  margin-top: 35rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 13px;
+}
+
+.subscribe-newsletter {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-credits {
+    margin-top: 50rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-credits {
+    margin-top: 50rem;
+  }
 }
 </style>

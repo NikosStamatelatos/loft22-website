@@ -3020,6 +3020,7 @@ body.introLoader_preventScroll {
   .grid_half {
     width: 90%;
     margin: auto 5%;
+    margin-bottom: 2rem;
   }
 
   #blog_older_post_column {
