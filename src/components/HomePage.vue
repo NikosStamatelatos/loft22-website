@@ -8,13 +8,6 @@
       <p>Coffee | Snack</p>
     </div>
     <content-homepage></content-homepage>
-    <div class="grid_map_full">
-      <!--.grid_map-->
-      <div class="txt-title">Localization:</div>
-      <!--/.txt-title-->
-      <div id="map-canvas"></div>
-      <br />
-    </div>
   </div>
   <router-link to="/"></router-link>
 </template>
