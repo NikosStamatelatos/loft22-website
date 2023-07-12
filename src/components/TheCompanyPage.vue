@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .grid_8 {
   display: center;
   flex-wrap: wrap;

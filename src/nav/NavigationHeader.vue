@@ -19,7 +19,7 @@
           <router-link to="/etaireia">ΕΤΑΙΡΕΙΑ</router-link>
         </li>
         <li>
-          <router-link to="/store">ΚΑΤΑΣΤΗΜΑ</router-link>
+          <router-link to="/katastima">ΚΑΤΑΣΤΗΜΑ</router-link>
         </li>
       </ul>
     </nav>

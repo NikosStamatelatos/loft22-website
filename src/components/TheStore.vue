@@ -6,21 +6,20 @@
     @close="inputIsInvalid = false"
   >
   </empty-field-newsletter>
-  <!--/.index-blocks-->
   <div class="wrapper">
     <div class="index-blocks">
       <!--.index-blocks-->
       <div class="grid_half">
         <!--.grid_half-->
-        <div class="txt-title">Το κατάστημα μας</div>
+        <div class="company-title">Το κατάστημα μας</div>
         <!--/.txt-title-->
         <!--.icon-->
         <div class="icon_title"><i class="fa fa-store fa-beat"></i></div>
         <!--/.icon-->
         <!--.txt-->
-        <div class="txt contact_new">
+        <div class="txt-company">
           <form @submit.prevent="submitForm">
-            <div class="contact_item">
+            <div class="company">
               <p>
                 Η εταιρεία μας δραστηριοποιείται στον χώρο του
                 φωτισμού-λαμπτήρων-γυάλινων αντικειμένων & ηλεκτρολογικού υλικού
@@ -39,174 +38,100 @@
             </div>
           </form>
         </div>
+        <!--/.txt-->
 
-        <!-- <div class="txt"> -->
-        <div class="social full_center">
-          <!-- <div class="clear"></div> -->
-          <!-- </div> -->
-        </div>
-        <!--/.social-->
         <!--/.txt-->
       </div>
       <!--/.grid_half-->
-      <form @submit.prevent="newInput">
-        <div class="grid_half">
-          <!--.grid_half-->
-          <div class="txt-title">Newsletter</div>
-          <!--/.txt-title-->
-          <!--.icon-->
-          <div class="icon_title"><i class="fa fa-envelope fa-beat"></i></div>
-          <!--/.icon-->
-          <!--.txt-->
-          <div class="txt-newsletter">
-            <div id="contactForm" action="#">
-              <div class="formrow">
-                <p>
-                  Εγγραφείτε στο newsletter μας και ενημερωθείτε πρώτοι για τις
-                  προσφορές μας!
-                </p>
-              </div>
-              <div class="email">
-                <input
-                  class="newinput"
-                  placeholder="Το email σας"
-                  type="text"
-                  name="email"
-                  maxlength="80"
-                  size="30"
-                />
-              </div>
-              <div class="formrow">
-                <input
-                  class="registration_button"
-                  type="submit"
-                  value="Εγγραφή"
-                />
-              </div>
-              <div class="formrow">
-                <p>
-                  Θα χρησιμοποιηθεί σύμφωνα με την
-                  <a class="policy-hyperlink" href="/menu"
-                    >Πολιτική Απορρήτου</a
-                  >
-                  μας
-                </p>
-              </div>
+      <div class="grid_half">
+        <!--.grid_half-->
+        <div class="company-title">Στείλτε μας μήνυμα</div>
+        <!--/.txt-title-->
+        <!--.icon-->
+        <div class="icon_title"><i class="fa fa-users fa-lg"></i></div>
+        <!--/.icon-->
+        <!--.txt-->
+        <div class="txt">
+          <form id="contactForm" action="#">
+            <div class="formrow">
+              <label class="newlabel" for="first_name"> Όνομα * </label>
+              <input
+                class="newinput"
+                type="text"
+                name="first_name"
+                maxlength="50"
+                size="30"
+              />
             </div>
-            <!-- <div id="contactMsg"></div> -->
-          </div>
+            <div class="formrow">
+              <label class="newlabel" for="last_name"> Επίθετο * </label>
+              <input
+                class="newinput"
+                type="text"
+                name="last_name"
+                maxlength="50"
+                size="30"
+              />
+            </div>
+            <div class="formrow">
+              <label class="newlabel" for="email"> E-mail * </label>
+              <input
+                class="newinput"
+                type="text"
+                name="email"
+                maxlength="80"
+                size="30"
+              />
+            </div>
+            <div class="formrow">
+              <label class="newlabel" for="telephone"> Τηλέφωνο </label>
+              <input
+                class="newinput"
+                type="text"
+                name="telephone"
+                maxlength="30"
+                size="30"
+              />
+            </div>
+            <div class="formrow_message">
+              <label class="newlabel" for="comments"> Μήνυμα * </label>
+              <textarea
+                class="newinput_message"
+                name="comments"
+                cols="25"
+                rows="6"
+              >
+              </textarea>
+            </div>
+            <div class="formrow">
+              <input class="send-btn" type="submit" value="Αποστολή" />
+            </div>
+          </form>
+          <div id="contactMsg"></div>
         </div>
-        <!--/.grid_half-->
-      </form>
+      </div>
     </div>
   </div>
-  <!--/.index-blocks-->
-  <!-- ***** - credits - ***** -->
 </template>
 
 <script>
-import EmptyFieldNewsletter from "../components/EmptyFieldNewsletter.vue";
-
 export default {
-  components: {
-    EmptyFieldNewsletter,
-  },
-  data() {
-    return {
-      id: "",
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      message: "",
-      inputIsInvalid: false,
-    };
-  },
-  methods: {
-    newInput() {
-      if (!this.name || !this.email || !this.phoneNumber || !this.date) {
-        this.inputIsInvalid = true;
-      } else {
-        // Perform the desired action when all fields are filled
-      }
-    },
+  mounted() {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component is mounted
   },
 };
 </script>
 
 <style scoped>
-@import "../styles/style.css";
-
-.wrapper {
-  min-height: calc(70vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.icon_title {
+  margin-bottom: 3rem;
 }
 
-.txt-newsletter {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the left */
-  text-align: center;
-  background: #000;
-  padding-bottom: 0.7rem;
-}
-
-.contact_item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
-}
-
-.contact_icon {
-  margin-right: 15px;
-  margin-top: 10rem;
-}
-.contact_item div {
-  font-size: 14px; /* Adjust the font size for the information */
-  display: flex;
-  align-items: center;
-}
-
-.contact_item p {
-  font-size: 15px; /* Adjust the font size for the information */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 0.2rem;
-}
-
-.social {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.email {
-  height: 50px;
-  display: flex;
-  justify-content: center; /* Align the input horizontally to the center */
-  align-items: center; /* Align the input vertically to the center */
-}
-
-.email_message {
-  height: 90px;
+.send-btn {
+  height: 40px;
+  width: 30%;
+  margin-left: 36%;
   display: block;
-}
-
-.newinput::placeholder {
-  font-size: 15px; /* Adjust the font size for the placeholder text */
-  color: #ffffff; /* Adjust the color for the placeholder text */
-}
-
-.newinput {
-  width: 90%; /* Set the width to 100% to expand the input field */
-  height: 40px; /* Adjust the height of the input field */
-  font-size: 15px; /* Adjust the font size of the input text */
-  padding: 5px; /* Adjust the padding around the input text */
-}
-
-.policy-hyperlink {
-  color: rgb(129, 128, 128);
+  cursor: pointer;
 }
 </style>

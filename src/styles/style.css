@@ -329,7 +329,8 @@ h5 a {
   color: #fff;
 } */
 
-.txt-title {
+.txt-title,
+.company-title {
   color: #fff;
   text-shadow: 0px 0px 30px #2e2e2e;
   text-align: center;
@@ -683,7 +684,7 @@ h5 a {
 .wrapper {
   width: 980px;
   margin: auto;
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 
 /* Layout styles */
@@ -927,7 +928,8 @@ nav {
   margin: 20px 0;
 }
 
-.txt-title {
+.txt-title,
+.company-title {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   text-align: center;

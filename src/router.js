@@ -10,7 +10,7 @@ const router = createRouter({
     { path: "/arxiki", component: HomePage },
     { path: "/menu", component: MenuPage },
     { path: "/etaireia", component: TheCompanyPage },
-    { path: "/store", component: TheStore },
+    { path: "/katastima", component: TheStore },
   ],
 });
 
