@@ -3,7 +3,9 @@
     <!--#header-->
     <div id="logo">
       <!--#logo-->
-      <img class="desktop-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
+      <a href="/arxiki">
+        <img class="desktop-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
+      </a>
     </div>
     <!--#menu-->
     <nav id="nav-container">

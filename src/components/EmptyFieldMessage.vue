@@ -13,6 +13,7 @@
       <menu>
         <slot name="actions"> </slot>
       </menu>
+      <button class="ok-btn" @click="$emit('close')">OΚ</button>
     </dialog>
   </transition>
 </template>
@@ -41,7 +42,7 @@ div {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
-  z-index: 10;
+  z-index: 100;
 }
 section.modal-content {
   padding: 1rem;
@@ -72,6 +73,7 @@ header {
   width: 100%;
   padding: 1rem;
   font-size: 10px;
+  margin-bottom: 2rem;
 }
 
 header h2 {
@@ -114,5 +116,26 @@ menu {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}
+
+.ok-btn {
+  color: white;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #474747;
+  border: 1px solid #474747;
+  transition: all 0.3s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 1rem;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+}
+
+.ok-btn:active {
+  color: #ffffff;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 </style>

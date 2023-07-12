@@ -22,7 +22,9 @@
     </ul>
     <div id="logo2">
       <!--#logo_for responsive-->
-      <img class="mobile-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
+      <a href="/arxiki">
+        <img class="mobile-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
+      </a>
     </div>
   </div>
 </template>
