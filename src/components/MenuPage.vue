@@ -3,14 +3,12 @@
   <div class="grid-container">
     <div class="grid_8">
       <!--.grid_8-->
-      <div class="txt-title">Breakfast</div>
+      <div class="txt-title">ΚΑΦΕΣ</div>
       <!--.icon-->
       <div class="icon_title"><i class="fa fa-coffee fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a class="magnific imgcard" href="imgs/breakfast.jpg">
-        <img src="../imgs/breakfast.jpg" class="img1" alt="Omelette" />
-      </a>
+      <img src="../imgs/coffee.jpg" class="img1" alt="Coffee" />
       <!--/.txt-title-->
       <div class="txt">
         <!--.txt-->
@@ -48,14 +46,14 @@
         </ul>
       </div>
       <!--/.txt-->
-      <div class="txt-title">Hot &amp; Cold Drinks</div>
+      <div class="txt-title">ΡΟΦΗΜΑΤΑ & ΦΥΣΙΚΟΙ ΧΥΜΟΙ</div>
       <!--.icon-->
-      <div class="icon_title"><i class="fa fa-glass fa-lg"></i></div>
+      <div class="icon_title">
+        <i class="fa fa-carrot fa-lg"></i>
+      </div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a class="magnific imgcard" href="images/drinks.jpg">
-        <img src="../imgs/drinks.jpg" class="img1" alt="Omelette" />
-      </a>
+      <img src="../imgs/juices.jpg" class="img1" alt="Juices" />
       <!--/.txt-title-->
       <div class="txt">
         <!--.txt-->
@@ -87,14 +85,12 @@
       </div>
       <!--/.txt-->
 
-      <div class="txt-title">Business Lunch</div>
+      <div class="txt-title">ΣΦΟΛΙΑΤΕΣ - SANDWICHES</div>
       <!--.icon-->
-      <div class="icon_title"><i class="fa fa-briefcase fa-lg"></i></div>
+      <div class="icon_title"><i class="fa fa-cutlery fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a class="magnific imgcard" href="images/lunch.jpg">
-        <img src="../imgs/lunch.jpg" class="img1" alt="Omelette" />
-      </a>
+      <img src="../imgs/sandwich.jpg" class="img1" alt="Sandwich" />
       <!--/.txt-title-->
       <div class="txt">
         <!--.txt-->
@@ -150,18 +146,12 @@
         </ul>
       </div>
       <!--.txt-->
-      <div class="txt-title">Dinner</div>
+      <div class="txt-title">SNACKS ΓΛΥΚΑ</div>
       <!--.icon-->
-      <div class="icon_title"><i class="fa fa-cutlery fa-lg"></i></div>
+      <div class="icon_title"><i class="fa fa-cookie-bite fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a
-        class="magnific imgcard"
-        title="Caption. Can be aligned to any side and contain any HTML."
-        href="imgs/dinner.jpg"
-      >
-        <img src="../imgs/dinner.jpg" class="img1" alt="Omelette" />
-      </a>
+      <img src="../imgs/sweet-snacks.jpg" class="img1" alt="SweetSnacks" />
       <!--/.txt-title-->
       <div class="txt">
         <!--.txt-->
@@ -199,15 +189,13 @@
         </ul>
       </div>
       <!--/.txt-->
-      <div class="txt-title">Desserts &amp; Sweets</div>
+      <div class="txt-title">ΧΥΜΟΙ - ΑΝΑΨΥΚΤΙΚΑ</div>
       <!--/.txt-title-->
       <!--.icon-->
-      <div class="icon_title"><i class="fa fa-birthday-cake fa-lg"></i></div>
+      <div class="icon_title"><i class="fa fa-bottle-droplet fa-lg"></i></div>
       <!--/.icon-->
       <!-- image gous here-->
-      <a class="magnific imgcard" href="imgs/dessert.jpg">
-        <img src="../imgs/dessert.jpg" class="img1" alt="Omelette" />
-      </a>
+      <img src="../imgs/soft-drinks.jpg" class="img1" alt="SoftDrinks" />
       <div class="txt">
         <!--.txt-->
         <ul>
@@ -249,7 +237,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .grid_8 {
   display: center;
   flex-wrap: wrap;
