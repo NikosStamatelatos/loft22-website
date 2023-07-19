@@ -155,4 +155,8 @@ export default {
   display: block;
   cursor: pointer;
 }
+
+.txt {
+  padding: 2rem;
+}
 </style>
