@@ -19,7 +19,7 @@
         </p>
       </div>
       <img src="../imgs/company2.jpg" class="company-img" />
-      <div class="txt-for-company">
+      <div class="txt2-for-company">
         <p>
           Από το πρώτο κατάστημα Coffee Berry μέχρι και σήμερα μοιραζόμαστε την
           τεχνογνωσία και την αγάπη μας για τον καφέ με όλους εσάς.
@@ -74,10 +74,24 @@ export default {
   transition: transform 0.3s ease-out;
 }
 
+.txt2-for-company {
+  margin-bottom: -20rem;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  transform: scale(1); /* Initial scale value */
+  /* Add transitions for smooth zooming */
+  transition: transform 0.3s ease-out;
+}
+
 .txt-for-company:hover {
   transform: scale(1.1); /* Adjust the scale value for zooming in or out */
 }
 
+.txt2-for-company:hover {
+  transform: scale(1.1); /* Adjust the scale value for zooming in or out */
+}
 @media screen and (max-width: 480px) {
   /* Styles for mobile devices with a maximum width of 480px */
   .grid_8 {
