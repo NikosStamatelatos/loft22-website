@@ -166,7 +166,7 @@ export default {
   align-items: center; /* Align items to the left */
   text-align: center;
   background: #000;
-  padding-bottom: 0.7rem;
+  padding-bottom: 1.1rem;
 }
 
 .contact_item {
