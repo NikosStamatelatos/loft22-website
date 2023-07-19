@@ -63,7 +63,7 @@
     <div class="grid-item">
       <div class="grid-item2-container">
         <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
-        <div class="txt-title">Freddo</div>
+        <div class="txt-title">FREDDO</div>
         <!--.icon-->
 
         <!--/.icon-->
@@ -80,14 +80,47 @@
       <!--.grid-item-->
       <div class="grid-item2-container">
         <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
-        <div class="txt-title">Καφές Φίλτρου</div>
+        <div class="txt-title">ΚΑΦΕΣ ΦΙΛΤΡΟΥ</div>
         <!--.icon-->
 
         <!--/.icon-->
         <!--/.txt-title-->
         <div>
-          Δοκιμάστε ένα Freddo Espresso ή Freddo Cappuccino, με ένα από τα 3
-          μοναδικά μας blends!
+          Απολαύστε έναν αρωματικό καφέ φίλτρου με έναν από τους 4 διαφορετικούς
+          τρόπους εκχύλισης!
+        </div>
+        <!--/.txt-->
+      </div>
+    </div>
+    <!--/grid-item-->
+    <div class="grid-item">
+      <div class="grid-item3-container">
+        <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
+        <div class="txt-title">ΖΕΣΤΗ ΣΟΚΟΛΑΤΑ</div>
+        <!--.icon-->
+
+        <!--/.icon-->
+        <!--/.txt-title-->
+        <div>
+          Με γεύση φουντούκι, αλατισμένη καραμέλα ή φράουλα, ένα από τα ροφήματα
+          σοκολάτας Coffee Berry θα γίνει το αγαπημένο σας!
+        </div>
+        <!--/.txt-->
+      </div>
+    </div>
+    <!--/grid-item-->
+    <div class="grid-item">
+      <!--.grid-item-->
+      <div class="grid-item3-container">
+        <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
+        <div class="txt-title">ΤΣΑΪ</div>
+        <!--.icon-->
+
+        <!--/.icon-->
+        <!--/.txt-title-->
+        <div>
+          Η μεγάλη ποικιλία μας σε τσάι και βότανα θα ικανοποιήσει και τους πιο
+          απαιτητικούς λάτρεις του τσαγιού!
         </div>
         <!--/.txt-->
       </div>
@@ -114,7 +147,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-left: 20rem;
   margin-right: 20rem;
 }
@@ -153,11 +186,8 @@
   background-color: black;
 }
 
-.grid-item2-container {
-  /* border: 1px solid black;
-  padding: 10px;
-  height: 100%;
-  background-color: black; */
+.grid-item3-container {
+  margin-top: -8rem;
 }
 
 .txt-title {
@@ -196,6 +226,14 @@
     /* margin-bottom: 5px; */
     margin-top: 5px !important;
   }
+
+  .grid-item3-container {
+    margin-top: 0rem;
+  }
+
+  .divider {
+    margin-top: -2rem;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -219,10 +257,15 @@
   height: 225px;
   border-radius: 50%;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-out;
 }
 
 .divider {
-  height: 10px; /* Increase the height of the divider */
+  height: 18px; /* Increase the height of the divider */
   width: 1500px;
+}
+
+.coffee-img:hover {
+  transform: scale(1.1); /* Adjust the scale value for zooming in or out */
 }
 </style>

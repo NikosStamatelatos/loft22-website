@@ -8,6 +8,9 @@
       <p>Coffee | Snack</p>
     </div>
     <content-homepage></content-homepage>
+    <div class="img-homepage">
+      <img src="../imgs/img-homepage.jpg" alt="image" />
+    </div>
   </div>
   <router-link to="/"></router-link>
 </template>
@@ -62,6 +65,15 @@ export default {
   margin-top: -50px;
   opacity: 1;
   box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.img-homepage {
+  margin-top: 2rem;
+  transition: transform 0.3s ease-out;
+}
+
+.img-homepage:hover {
+  transform: scale(1.1); /* Adjust the scale value for zooming in or out */
 }
 
 @media screen and (max-width: 480px) {
