@@ -3,10 +3,11 @@
     <the-header></the-header>
     <router-view></router-view>
     <footer-page></footer-page>
-
-    <button id="scrollToTopButton" @click="scrollToTop" title="Scroll to Top">
-      ^
-    </button>
+    <transition name="fade">
+      <button v-if="showScrollToTop" class="scroll-to-top" @click="scrollToTop">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+    </transition>
   </div>
 </template>
 
@@ -19,17 +20,31 @@ export default {
     TheHeader,
     FooterPage,
   },
+  data() {
+    return {
+      showScrollToTop: false,
+    };
+  },
   methods: {
     scrollToTop() {
-      // For smooth scrolling, use a library like "vue-scrollto" or write a custom function
-      // Here, I'll provide a simple example without smooth scrolling:
-      const scrollToTop = () => {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera
-      };
-
-      scrollToTop();
+      // Scrolls the window to the top with a smooth behavior
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
+    handleScroll() {
+      // Check the current scroll position
+      this.showScrollToTop = window.scrollY > 0;
+    },
+  },
+  mounted() {
+    // Add scroll event listener when the component is mounted
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    // Remove the scroll event listener when the component is about to be unmounted
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>
@@ -40,24 +55,32 @@ export default {
 
 @import "./styles/style.css";
 
-#scrollToTopButton {
-  display: none; /* Hide the button initially */
+/* Style for the scroll-to-top button */
+.scroll-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
+  bottom: 30px;
+  right: 30px;
   background-color: #333;
   color: #fff;
-  font-size: 24px;
+  border: none;
   border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
   cursor: pointer;
+  opacity: 0.8;
 }
 
-#scrollToTopButton:hover {
-  background-color: #555;
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
