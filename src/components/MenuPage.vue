@@ -14,34 +14,54 @@
         <!--.txt-->
         <ul>
           <li>
-            <h2>Eggs</h2>
+            <h2>FREDDO ESPRESSO</h2>
             <br />
-            <p class="cart2">bacon, ham, links</p>
-            <p class="cartprice">price: 4,99$</p>
+            <p class="cartprice">Τιμή: 2,00€</p>
           </li>
           <li>
-            <h2>Omelettes western</h2>
+            <h2>FREDDO CAPUCCINO</h2>
             <br />
-            <p class="cart2">pepper, onion, ham.</p>
-            <p class="cartprice">price: 7,50$</p>
+            <p class="cartprice">Τιμή: 2,20€</p>
           </li>
           <li>
-            <h2>Double egge sandwiches</h2>
+            <h2>ESPRESSO</h2>
             <br />
-            <p class="cart2">cheese, tomato lettuce, mayo and homefries</p>
-            <p class="cartprice">price: 8$</p>
+            <p class="cartprice">Τιμή: 1,90€</p>
           </li>
           <li>
-            <h2>Fresh fruit</h2>
+            <h2>AMERICANO</h2>
             <br />
-            <p class="cart2">freshly sliced seasonal fruit</p>
-            <p class="cartprice">price: 5$</p>
+            <p class="cartprice">Τιμή: 1,90€</p>
           </li>
           <li>
-            <h2>Corned beef hash &amp; eggs</h2>
+            <h2>CAPUCCINO</h2>
             <br />
-            <p class="cart2">served with homefries &amp; toast</p>
-            <p class="cartprice">price: 5$</p>
+            <p class="cartprice">Τιμή: 2,20€</p>
+          </li>
+          <li>
+            <h2>CAPUCCINO LATE</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,30€</p>
+          </li>
+          <li>
+            <h2>ΦΡΑΠΕ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,80€</p>
+          </li>
+          <li>
+            <h2>ΝΕΣ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,80€</p>
+          </li>
+          <li>
+            <h2>ΦΙΛΤΡΟΥ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,80€</p>
+          </li>
+          <li>
+            <h2>ΕΛΛΗΝΙΚΟΣ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,70€</p>
           </li>
         </ul>
       </div>
@@ -59,33 +79,45 @@
         <!--.txt-->
         <ul>
           <li>
-            <h2>Regular Coffee</h2>
+            <h2>ΣΟΚΟΛΑΤΑ</h2>
             <br />
-            <p class="cart2">Black or White</p>
-            <p class="cartprice">price: 3$</p>
+            <p class="cartprice">Τιμή: 2,10€</p>
           </li>
           <li>
-            <h2>Hot Tea</h2>
+            <h2>ΣΟΚΟΛΑΤΑ STRAWBERRY</h2>
             <br />
-            <p class="cart2">Pinch, Earl-gray or green</p>
-            <p class="cartprice">price: 4$</p>
+            <p class="cartprice">Τιμή: 2,50€</p>
           </li>
           <li>
-            <h2>Brewed Regular</h2>
+            <h2>ΣΟΚΟΛΑΤΑ ΠΡΑΛΙΝΑ</h2>
             <br />
-            <p class="cart2">With strawberry</p>
-            <p class="cartprice">price: 6$</p>
+            <p class="cartprice">Τιμή: 2,50€</p>
           </li>
           <li>
-            <h2>Traditional Mojito</h2>
+            <h2>MOCCA</h2>
             <br />
-            <p class="cartprice">price: 9$</p>
+            <p class="cartprice">Τιμή: 2,60€</p>
+          </li>
+          <li>
+            <h2>ΤΣΑΙ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,50€</p>
+          </li>
+          <li>
+            <h2>ΦΥΣΙΚΟΣ ΧΥΜΟΣ ΠΟΡΤΟΚΑΛΙ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>ΦΥΣΙΚΟΣ ΧΥΜΟΣ ΑΝΑΜΕΙΚΤΟΣ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 3,00€</p>
           </li>
         </ul>
       </div>
       <!--/.txt-->
 
-      <div class="txt-title">ΣΦΟΛΙΑΤΕΣ - SANDWICHES</div>
+      <div class="txt-title">ΜΠΑΓΚΕΤΕΣ - ΑΡΑΒΙΚΕΣ</div>
       <!--.icon-->
       <div class="icon_title"><i class="fa fa-cutlery fa-lg"></i></div>
       <!--/.icon-->
@@ -96,56 +128,127 @@
         <!--.txt-->
         <ul>
           <li>
-            <h2>Crema d’Astice</h2>
+            <h2>ΑΡΑΒΙΚΗ ΓΑΛΟΠΟΥΛΑ</h2>
             <br />
-            <p class="cart2">Lobster bisque scented with vintage cognac</p>
-            <p class="cartprice">price: 25$</p>
+            <p class="cart2">Γαλοπούλα καπνιστή,Τυρί Gouda,Μαγιονέζα</p>
+            <p class="cartprice">Τιμή: 2,60€</p>
           </li>
           <li>
-            <h2>Linguine con frutti di mare</h2>
+            <h2>ΑΡΑΒΙΚΗ ΚΟΤΟΠΟΥΛΟ</h2>
             <br />
-            <p class="cart2">Linguine with spicy tomato sauce and seafood</p>
-            <p class="cartprice">price: 30$</p>
+            <p class="cart2">Φιλέτο κοτόπουλο, chicken flavor</p>
+            <p class="cartprice">Τιμή: 2,80€</p>
           </li>
           <li>
-            <h2>Grigliata mista di pesce</h2>
+            <h2>ΜΠΑΓΚΕΤΑ ΛΕΥΚΗ ΠΑΡΙΖΑ</h2>
             <br />
-            <p class="cart2">Assorted grilled seafood</p>
-            <p class="cartprice">price: 45,99$</p>
+            <p class="cart2">Πάριζα, Τυρί Gouda, Μαγιονέζα</p>
+            <p class="cartprice">Τιμή: 2,60€</p>
           </li>
           <li>
-            <h2>Los cabos chicken tacos</h2>
+            <h2>ΜΠΑΓΚΕΤΑ ΚΟΤΟΠΟΥΛΟ</h2>
             <br />
-            <p class="cart2">piced tomato poached chicken</p>
-            <p class="cartprice">price: 25,75$</p>
+            <p class="cart2">Κοτόπουλο,Τυρί Gouda, Chicken Flavor</p>
+            <p class="cartprice">Τιμή: 3,00€</p>
           </li>
           <li>
-            <h2>Crispy chicken tenders</h2>
+            <h2>ΜΠΑΓΚΕΤΑ ΚΟΤΟΜΠΟΥΚΙΕΣ</h2>
             <br />
-            <p class="cart2">panko breaded, citrus plum dipping sauce</p>
-            <p class="cartprice">price: 15$</p>
+            <p class="cart2">
+              Καλαμπόκι, Κοτομπουκιές, Τυρί Gouda, Chicken Flavor
+            </p>
+            <p class="cartprice">Τιμή: 3,00€</p>
           </li>
           <li>
-            <h2>Corned beef hash &amp; eggs</h2>
+            <h2>ΜΠΑΓΚΕΤΑ ΟΛΙΚΗΣ</h2>
             <br />
-            <p class="cart2">served with homefries &amp; toast</p>
-            <p class="cartprice">price: 18$</p>
+            <p class="cart2">Γαλοπούλα καπνιστή, Τυρί Gouda, Μαγιονέζα</p>
+            <p class="cartprice">Τιμή: 2,80€</p>
           </li>
           <li>
-            <h2>Omelettes western</h2>
+            <h2>ΜΠΡΙΟΣ ΓΑΛΟΠΟΥΛΑ</h2>
             <br />
-            <p class="cart2">pepper, onion, ham</p>
-            <p class="cartprice">price: 43$</p>
+            <p class="cart2">Γαλοπούλα καπνιστή, Τυρί Gouda, Μαγιονέζα</p>
+            <p class="cartprice">Τιμή: 2,80€</p>
           </li>
           <li>
-            <h2>Grigliata mista di pesce</h2>
+            <h2>ΤΟΣΤ</h2>
             <br />
-            <p class="cart2">Assorted grilled seafood</p>
-            <p class="cartprice">price: 30$</p>
+            <p class="cart2">Γαλοπούλα, Τυρί</p>
+            <p class="cartprice">Τιμή: 1,50€</p>
           </li>
         </ul>
       </div>
       <!--.txt-->
+      <div class="txt-title">ΣΦΟΛΙΑΤΕΣ</div>
+      <!--.icon-->
+      <div class="icon_title"><i class="fa fa-cutlery fa-lg"></i></div>
+      <!--/.icon-->
+      <!-- image gous here-->
+      <img src="../imgs/sandwich.jpg" class="img1" alt="Sandwich" />
+      <!--/.txt-title-->
+      <div class="txt">
+        <!--.txt-->
+        <ul>
+          <li>
+            <h2>ΚΡΟΥΑΣΑΝ ΓΑΛΟΠΟΥΛΑ</h2>
+            <br />
+            <p class="cart2">Γαλοπούλα καπνιστή, Τυρί Gouda, Μαγιονέζα</p>
+            <p class="cartprice">Τιμή: 2,80€</p>
+          </li>
+          <li>
+            <h2>ΚΡΟΥΑΣΑΝ ΒΟΥΤΥΡΟΥ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,50€</p>
+          </li>
+          <li>
+            <h2>ΚΡΟΥΑΣΑΝ ΜΕ ΠΡΑΛΙΝΑ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,90€</p>
+          </li>
+          <li>
+            <h2>ΚΟΥΛΟΥΡΙ ΜΕ CREAM PATISERI</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,60€</p>
+          </li>
+          <li>
+            <h2>ΚΟΥΛΟΥΡΙ ΣΟΚΟΛΑΤΑΣ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,70€</p>
+          </li>
+          <li>
+            <h2>ΚΟΥΛΟΥΡΙ ΠΟΛΥΣΠΟΡΟ</h2>
+            <br />
+            <p class="cart2">Philadelphia, Γαλοπούλα</p>
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>ΚΑΣΕΡΟΠΙΤΑ ΧΕΙΡΟΠΟΙΗΤΗ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,80€</p>
+          </li>
+          <li>
+            <h2>ΜΠΟΥΓΑΤΣΑ ΜΕ ΤΥΡΙ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,20€</p>
+          </li>
+          <li>
+            <h2>ΜΠΟΥΓΑΤΣΑ ΜΕ ΤΥΡΙ ΚΑΙ ΣΠΑΝΑΚΙ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,20€</p>
+          </li>
+          <li>
+            <h2>ΜΠΟΥΓΑΤΣΑ ΜΕ ΚΡΕΜΑ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>ΠΙΤΣΑ ΧΩΡΙΑΤΙΚΗ ΣΚΕΠΑΣΤΗ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,50€</p>
+          </li>
+        </ul>
+      </div>
       <div class="txt-title">SNACKS ΓΛΥΚΑ</div>
       <!--.icon-->
       <div class="icon_title"><i class="fa fa-cookie-bite fa-lg"></i></div>
@@ -157,34 +260,59 @@
         <!--.txt-->
         <ul>
           <li>
-            <h2>Corned beef hash &amp; eggs</h2>
+            <h2>RED ALMOND ΜΠΑΡΑ ΒΡΩΜΗΣ ΜΕ CRANBERRY & ΜΕΛΙ</h2>
             <br />
-            <p class="cart2">served with homefries &amp; toast</p>
-            <p class="cartprice">price: 18$</p>
+            <p class="cart2">
+              Νιφάδες Βρώμης, Ινδοκάρυδο, Σταφίδα, Βερύκοκο, Κάσιους, Φυστίκι,
+              Ηλιόσπορο, Cranberry & μέλι
+            </p>
+            <p class="cartprice">Τιμή: 1,90€</p>
           </li>
           <li>
-            <h2>Omelettes western</h2>
+            <h2>RED ALMOND ΜΠΑΡΑ ΒΡΩΜΗΣ ΜΕ ΜΕΛΙ & ΚΑΡΥΔΙΑ</h2>
             <br />
-            <p class="cart2">pepper, onion, ham</p>
-            <p class="cartprice">price: 43$</p>
+            <p class="cart2">Μέλι, Καρύδια</p>
+            <p class="cartprice">Τιμή: 1,90€</p>
           </li>
           <li>
-            <h2>Grigliata mista di pesce</h2>
+            <h2>SILVER FOOD ΚΟΥΛΟΥΡΙ ΚΑΝΕΛΑΣ</h2>
             <br />
-            <p class="cart2">Assorted grilled seafood</p>
-            <p class="cartprice">price: 30$</p>
+            <p class="cart2">Με επικάλυψη μαύρης σοκολάτας</p>
+            <p class="cartprice">Τιμή: 1,20€</p>
           </li>
           <li>
-            <h2>Fresh fruit</h2>
+            <h2>SILVER FOOD ΚΟΥΛΟΥΡΙ ΚΑΝΕΛΑΣ</h2>
             <br />
-            <p class="cart2">freshly sliced seasonal fruit</p>
-            <p class="cartprice">price: 5$</p>
+            <p class="cart2">Με επικάλυψη σοκολάτα γάλακτος</p>
+            <p class="cartprice">Τιμή: 1,20€</p>
           </li>
           <li>
-            <h2>Super Beef</h2>
+            <h2>RED ALMOND MINI SOFT COOKIES</h2>
             <br />
-            <p class="cart2">served with homefries &amp; toast</p>
-            <p class="cartprice">price: 5$</p>
+            <p class="cart2">Double Choco 100gr</p>
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>RED ALMOND MINI SOFT COOKIES</h2>
+            <br />
+            <p class="cart2">Βανίλια με κομμάτια σοκολάτας 100gr</p>
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>RED ALMOND ΜΗΛΟΠΙΤΑΚΙ</h2>
+            <br />
+            <p class="cart2">100gr</p>
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>MINI SOFT COOKIE ΦΡΑΟΥΛΑ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>MINI SOFT COOKIE BUENO</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,00€</p>
           </li>
         </ul>
       </div>
@@ -200,27 +328,64 @@
         <!--.txt-->
         <ul>
           <li>
-            <h2>Additions to smoothie</h2>
+            <h2>ΑΜΙΤΑ 330ML ΒΥΣΣΙΝΟ</h2>
             <br />
-            <p class="cart2">yogurt, ice cream or honey</p>
-            <p class="cartprice">price: 7$</p>
+            <p class="cartprice">Τιμή: 1,30€</p>
           </li>
           <li>
-            <h2>Banana blast espresso smoothie</h2>
+            <h2>ΑΜΙΤΑ 330ML ΡΟΔΑΚΙΝΟ</h2>
             <br />
-            <p class="cart2">
-              original or add any of our sundae topping flovors
-            </p>
-            <p class="cartprice">price: 12$</p>
+            <p class="cartprice">Τιμή: 1,30€</p>
           </li>
           <li>
-            <h2>Banana blast espresso smoothie</h2>
+            <h2>ΑΜΙΤΑ 330ML ΠΟΡΤΟΚΑΛΙ-ΒΕΡΙΚΟΚΟ-ΜΗΛΟ</h2>
             <br />
-            <p class="cart2">
-              tortilla wrapped around apple pie filling, fried slathered with
-              butter
-            </p>
-            <p class="cartprice">price: 22$</p>
+            <p class="cartprice">Τιμή: 1,30€</p>
+          </li>
+          <li>
+            <h2>MOTION</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,50€</p>
+          </li>
+          <li>
+            <h2>COCA-COLA ZERO/LIGHT 330ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,40€</p>
+          </li>
+          <li>
+            <h2>FANTA/ FANTA BLUE - SPRITE 330ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,40€</p>
+          </li>
+          <li>
+            <h2>COCA COLA ZERO/LIGHT 500ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,60€</p>
+          </li>
+          <li>
+            <h2>FANTA - SPRITE 500ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,60€</p>
+          </li>
+          <li>
+            <h2>FUZE ΛΕΜΟΝΑΔΑ - ΛΟΥΙΖΑ 500ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,70€</p>
+          </li>
+          <li>
+            <h2>FUZE ΡΟΔΑΚΙΝΟ - ΙΒΙΣΚΟΣ 500ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,70€</p>
+          </li>
+          <li>
+            <h2>SCHWEPPES 330ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 1,40€</p>
+          </li>
+          <li>
+            <h2>ΝΕΡΟ 500ML</h2>
+            <br />
+            <p class="cartprice">Τιμή: 0,50€</p>
           </li>
         </ul>
       </div>
@@ -266,7 +431,7 @@ export default {
   color: #fff;
   font-size: 16px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
