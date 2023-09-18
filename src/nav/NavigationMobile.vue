@@ -8,7 +8,7 @@
     </div>
     <ul :class="{ 'show-menu': isMenuOpen }" @click.stop>
       <li>
-        <router-link to="/arxiki">ΑΡΧΙΚΗ</router-link>
+        <router-link to="/homepage">ΑΡΧΙΚΗ</router-link>
       </li>
       <li>
         <router-link to="/menu">ΜΕΝΟΥ</router-link>
@@ -17,12 +17,12 @@
         <router-link to="/etaireia">ΕΤΑΙΡΕΙΑ</router-link>
       </li>
       <li>
-        <router-link to="/katastima">ΚΑΤΑΣΤΗΜΑ</router-link>
+        <router-link to="/store">ΚΑΤΑΣΤΗΜΑ</router-link>
       </li>
     </ul>
     <div id="logo2">
       <!--#logo_for responsive-->
-      <a href="/arxiki">
+      <a href="/homepage">
         <img class="mobile-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
       </a>
     </div>

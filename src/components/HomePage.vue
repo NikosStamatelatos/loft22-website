@@ -1,6 +1,6 @@
 <template>
   <!--/title-->
-  <div id="title">Welcome to Loft 22 Coffee Shop!<br /></div>
+  <div id="title">Welcome to Loft22 Coffee Shop!<br /></div>
   <!-- ***** - Main image - ***** -->
   <div class="main-image">
     <img src="../imgs/img3-loft22.jpg" alt="image" />
@@ -12,7 +12,7 @@
       <img src="../imgs/img-homepage.jpg" alt="image" />
     </div>
   </div>
-  <router-link to="/"></router-link>
+  <router-link to="/homepage"></router-link>
 </template>
 
 <script>

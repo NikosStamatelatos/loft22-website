@@ -8,11 +8,11 @@ import PrivacyPolicy from "./components/PrivacyPolicy.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/arxiki", component: HomePage },
+    { path: "/homepage", component: HomePage },
     { path: "/menu", component: MenuPage },
     { path: "/etaireia", component: TheCompanyPage },
-    { path: "/katastima", component: TheStore },
-    { path: "/politiki-aporritou", component: PrivacyPolicy },
+    { path: "/store", component: TheStore },
+    { path: "/privacy-policy", component: PrivacyPolicy },
   ],
 });
 

@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/politiki-aporritou"></router-link>
+  <router-link to="/privacy-policy"></router-link>
   <div class="wrapper">
     <div class="txt-company">
       <div class="company">

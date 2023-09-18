@@ -3,7 +3,7 @@
     <!--#header-->
     <div id="logo">
       <!--#logo-->
-      <a href="/arxiki">
+      <a href="/homepage">
         <img class="desktop-logo" src="../imgs/logotipo.jpg" alt="Loft-22" />
       </a>
     </div>
@@ -12,7 +12,7 @@
       <!--#menu-->
       <ul id="nav">
         <li>
-          <router-link to="/arxiki">ΑΡΧΙΚΗ</router-link>
+          <router-link to="/homepage">ΑΡΧΙΚΗ</router-link>
         </li>
         <li>
           <router-link to="/menu">ΜΕΝΟΥ</router-link>
@@ -21,7 +21,7 @@
           <router-link to="/etaireia">ΕΤΑΙΡΕΙΑ</router-link>
         </li>
         <li>
-          <router-link to="/katastima">ΚΑΤΑΣΤΗΜΑ</router-link>
+          <router-link to="/store">ΚΑΤΑΣΤΗΜΑ</router-link>
         </li>
       </ul>
     </nav>

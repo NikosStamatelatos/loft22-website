@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/katastima"></router-link>
+  <router-link to="/store"></router-link>
   <empty-field-message
     :open="inputIsInvalid"
     title="Παρακαλούμε συμπληρώστε όλα τα απαιτούμενα πεδία!"

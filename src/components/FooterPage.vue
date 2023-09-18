@@ -98,7 +98,7 @@
               <div class="formrow">
                 <p>
                   Θα χρησιμοποιηθεί σύμφωνα με την
-                  <a class="policy-hyperlink" href="/politiki-aporritou"
+                  <a class="policy-hyperlink" href="/privacy-policy"
                     >Πολιτική Απορρήτου</a
                   >
                   μας
