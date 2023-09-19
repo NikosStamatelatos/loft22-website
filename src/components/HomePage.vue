@@ -84,7 +84,7 @@ export default {
 .img-homepage {
   margin-top: 2rem;
   transition: transform 0.3s ease-out;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
 }
 
 .img-homepage:hover {
