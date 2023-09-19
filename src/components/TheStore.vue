@@ -35,6 +35,20 @@
               μεταφορική εταιρεία.
             </p>
           </div>
+
+          <div>
+            <iframe
+              width="450"
+              height="200"
+              style="border: 0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJNrHOmmgBkf51alBnVldaN9H8-k7vt8s
+    &q=Loft22 - Coffee | Snack"
+            >
+            </iframe>
+          </div>
         </div>
         <!--/.txt-->
       </div>

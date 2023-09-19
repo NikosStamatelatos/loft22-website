@@ -57,7 +57,7 @@
     <!--/grid-item-->
   </div>
   <!--/grid-container-->
-  <div id="title">ΑΠΟΛΑΥΣΤΙΚΑ ΡΟΦΗΜΑΤΑ<br /></div>
+  <div id="title">Απολαυστικά ροφήματα<br /></div>
   <img src="../imgs/divider.png" class="divider" alt="SweetSnacks" />
   <div class="grid2-container">
     <div class="grid-item">
@@ -242,6 +242,10 @@
     font-size: 32px;
     /* margin-bottom: 5px; */
   }
+
+  .grid-item3-container {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -249,6 +253,13 @@
   #title {
     font-size: 35px;
     /* margin-bottom: 10px; */
+  }
+
+  .grid-item-container {
+    border: 1px solid black;
+    padding: 50px;
+    height: 100%;
+    background-color: black;
   }
 }
 

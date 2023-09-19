@@ -11,6 +11,20 @@
     <div class="img-homepage">
       <img src="../imgs/img-homepage.jpg" alt="image" />
     </div>
+    <div id="title">Που θα μας βρείτε...<br /></div>
+    <div class="map-container">
+      <iframe
+        width="700"
+        height="300"
+        style="border: 0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJNrHOmmgBkf51alBnVldaN9H8-k7vt8s
+    &q=Loft22 - Coffee | Snack"
+      >
+      </iframe>
+    </div>
   </div>
   <router-link to="/homepage"></router-link>
 </template>
@@ -70,6 +84,7 @@ export default {
 .img-homepage {
   margin-top: 2rem;
   transition: transform 0.3s ease-out;
+  margin-bottom: 7rem;
 }
 
 .img-homepage:hover {
@@ -83,6 +98,12 @@ export default {
     /* margin-bottom: 5px; */
     margin-top: 5px !important;
   }
+  .map-container {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -91,6 +112,13 @@ export default {
     font-size: 32px;
     /* margin-bottom: 5px; */
   }
+
+  .map-container {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -98,6 +126,13 @@ export default {
   #title {
     font-size: 35px;
     /* margin-bottom: 10px; */
+  }
+
+  .map-container {
+    width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
