@@ -56,12 +56,12 @@
           <li>
             <h2>ΦΙΛΤΡΟΥ</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,80€</p>
+            <p class="cartprice">Τιμή: 1,90€</p>
           </li>
           <li>
             <h2>ΕΛΛΗΝΙΚΟΣ</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,70€</p>
+            <p class="cartprice">Τιμή: 1,50€</p>
           </li>
         </ul>
       </div>
@@ -81,7 +81,7 @@
           <li>
             <h2>ΣΟΚΟΛΑΤΑ</h2>
             <br />
-            <p class="cartprice">Τιμή: 2,10€</p>
+            <p class="cartprice">Τιμή: 2,20€</p>
           </li>
           <li>
             <h2>ΣΟΚΟΛΑΤΑ STRAWBERRY</h2>
@@ -96,7 +96,7 @@
           <li>
             <h2>MOCCA</h2>
             <br />
-            <p class="cartprice">Τιμή: 2,60€</p>
+            <p class="cartprice">Τιμή: 2,50€</p>
           </li>
           <li>
             <h2>ΤΣΑΙ</h2>
@@ -193,13 +193,13 @@
           <li>
             <h2>ΚΡΟΥΑΣΑΝ ΓΑΛΟΠΟΥΛΑ</h2>
             <br />
-            <p class="cart2">Γαλοπούλα καπνιστή, Τυρί Gouda, Μαγιονέζα</p>
+            <p class="cart2">Γαλοπούλα καπνιστή, Τυρί Gouda, Ντομάτα</p>
             <p class="cartprice">Τιμή: 2,80€</p>
           </li>
           <li>
             <h2>ΚΡΟΥΑΣΑΝ ΒΟΥΤΥΡΟΥ</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,50€</p>
+            <p class="cartprice">Τιμή: 1,70€</p>
           </li>
           <li>
             <h2>ΚΡΟΥΑΣΑΝ ΜΕ ΠΡΑΛΙΝΑ</h2>
@@ -207,44 +207,33 @@
             <p class="cartprice">Τιμή: 1,90€</p>
           </li>
           <li>
-            <h2>ΚΟΥΛΟΥΡΙ ΜΕ CREAM PATISERI</h2>
-            <br />
-            <p class="cartprice">Τιμή: 1,60€</p>
-          </li>
-          <li>
-            <h2>ΚΟΥΛΟΥΡΙ ΣΟΚΟΛΑΤΑΣ</h2>
-            <br />
-            <p class="cartprice">Τιμή: 1,70€</p>
-          </li>
-          <li>
-            <h2>ΚΟΥΛΟΥΡΙ ΠΟΛΥΣΠΟΡΟ</h2>
-            <br />
-            <p class="cart2">Philadelphia, Γαλοπούλα</p>
-            <p class="cartprice">Τιμή: 2,00€</p>
-          </li>
-          <li>
             <h2>ΚΑΣΕΡΟΠΙΤΑ ΧΕΙΡΟΠΟΙΗΤΗ</h2>
             <br />
             <p class="cartprice">Τιμή: 1,80€</p>
           </li>
           <li>
-            <h2>ΜΠΟΥΓΑΤΣΑ ΜΕ ΤΥΡΙ</h2>
+            <h2>ΤΥΡΟΠΙΤΑ ΣΦΟΛΙΑΤΑ</h2>
             <br />
-            <p class="cartprice">Τιμή: 2,20€</p>
+            <p class="cartprice">Τιμή: 1,50€</p>
           </li>
           <li>
-            <h2>ΜΠΟΥΓΑΤΣΑ ΜΕ ΤΥΡΙ ΚΑΙ ΣΠΑΝΑΚΙ</h2>
+            <h2>ΖΑΜΠΟΝΟΤΥΡΟΠΙΤΑ</h2>
             <br />
-            <p class="cartprice">Τιμή: 2,20€</p>
-          </li>
-          <li>
-            <h2>ΜΠΟΥΓΑΤΣΑ ΜΕ ΚΡΕΜΑ</h2>
-            <br />
+            <p class="cart2">Με κόκκινη σάλτσα</p>
             <p class="cartprice">Τιμή: 2,00€</p>
           </li>
           <li>
-            <h2>ΠΙΤΣΑ ΧΩΡΙΑΤΙΚΗ ΣΚΕΠΑΣΤΗ</h2>
+            <h2>ΛΟΥΚΑΝΙΚΟΠΙΤΑ</h2>
             <br />
+
+            <p class="cartprice">Τιμή: 1,80€</p>
+          </li>
+          <li>
+            <h2>ΣΠΑΝΑΚΟΤΥΡΟΠΙΤΑ</h2>
+            <br />
+            <p class="cart2">
+              Με χωριάτικό φύλλο, φρέσκο κρεμμύδι και ελαιόλαδο
+            </p>
             <p class="cartprice">Τιμή: 2,50€</p>
           </li>
         </ul>
@@ -259,21 +248,6 @@
       <div class="txt">
         <!--.txt-->
         <ul>
-          <li>
-            <h2>RED ALMOND ΜΠΑΡΑ ΒΡΩΜΗΣ ΜΕ CRANBERRY & ΜΕΛΙ</h2>
-            <br />
-            <p class="cart2">
-              Νιφάδες Βρώμης, Ινδοκάρυδο, Σταφίδα, Βερύκοκο, Κάσιους, Φυστίκι,
-              Ηλιόσπορο, Cranberry & μέλι
-            </p>
-            <p class="cartprice">Τιμή: 1,90€</p>
-          </li>
-          <li>
-            <h2>RED ALMOND ΜΠΑΡΑ ΒΡΩΜΗΣ ΜΕ ΜΕΛΙ & ΚΑΡΥΔΙΑ</h2>
-            <br />
-            <p class="cart2">Μέλι, Καρύδια</p>
-            <p class="cartprice">Τιμή: 1,90€</p>
-          </li>
           <li>
             <h2>SILVER FOOD ΚΟΥΛΟΥΡΙ ΚΑΝΕΛΑΣ</h2>
             <br />
@@ -314,6 +288,22 @@
             <br />
             <p class="cartprice">Τιμή: 2,00€</p>
           </li>
+          <li>
+            <h2>RED ALMOND ΓΚΟΦΡΕΤΑΚΙ ΦΡΑΟΥΛΑ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>RED ALMOND ΠΟΥΡΑΚΙ ΓΕΜΙΣΤΟ ΜΕ ΣΟΚΟΛΑΤΑ</h2>
+            <br />
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
+          <li>
+            <h2>MINI SOFT COOKIE ΜΑΥΡΗ ΣΟΚΟΛΑΤΑ</h2>
+            <br />
+            <p class="cart2">Με κομματάκια λευκής σοκολάτας</p>
+            <p class="cartprice">Τιμή: 2,00€</p>
+          </li>
         </ul>
       </div>
       <!--/.txt-->
@@ -328,45 +318,26 @@
         <!--.txt-->
         <ul>
           <li>
-            <h2>ΑΜΙΤΑ 330ML ΒΥΣΣΙΝΟ</h2>
-            <br />
-            <p class="cartprice">Τιμή: 1,30€</p>
-          </li>
-          <li>
-            <h2>ΑΜΙΤΑ 330ML ΡΟΔΑΚΙΝΟ</h2>
-            <br />
-            <p class="cartprice">Τιμή: 1,30€</p>
-          </li>
-          <li>
-            <h2>ΑΜΙΤΑ 330ML ΠΟΡΤΟΚΑΛΙ-ΒΕΡΙΚΟΚΟ-ΜΗΛΟ</h2>
-            <br />
-            <p class="cartprice">Τιμή: 1,30€</p>
-          </li>
-          <li>
             <h2>MOTION</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,50€</p>
+            <p class="cartprice">Τιμή: 1,60€</p>
           </li>
           <li>
             <h2>COCA-COLA ZERO/LIGHT 330ML</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,40€</p>
+            <p class="cartprice">Τιμή: 1,20€</p>
           </li>
           <li>
-            <h2>FANTA/ FANTA BLUE - SPRITE 330ML</h2>
+            <h2>LUX ΠΟΡΤΟΚΑΛΑΔΑ / LUX BLUE - SPRITE 330ML</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,40€</p>
+            <p class="cartprice">Τιμή: 1,20€</p>
           </li>
           <li>
-            <h2>COCA COLA ZERO/LIGHT 500ML</h2>
+            <h2>LUX ΛΕΜΟΝΑΔΑ 330ML</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,60€</p>
+            <p class="cartprice">Τιμή: 1,20€</p>
           </li>
-          <li>
-            <h2>FANTA - SPRITE 500ML</h2>
-            <br />
-            <p class="cartprice">Τιμή: 1,60€</p>
-          </li>
+
           <li>
             <h2>FUZE ΛΕΜΟΝΑΔΑ - ΛΟΥΙΖΑ 500ML</h2>
             <br />
@@ -380,7 +351,7 @@
           <li>
             <h2>SCHWEPPES 330ML</h2>
             <br />
-            <p class="cartprice">Τιμή: 1,40€</p>
+            <p class="cartprice">Τιμή: 1,20€</p>
           </li>
           <li>
             <h2>ΝΕΡΟ 500ML</h2>

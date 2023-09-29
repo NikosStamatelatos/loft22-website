@@ -1,6 +1,6 @@
 <template>
   <!--/title-->
-  <div id="title">Welcome to Loft22 Coffee Shop!<br /></div>
+  <div id="title">Απολαύστε τον καφέ σας σήμερα!<br /></div>
   <!-- ***** - Main image - ***** -->
   <div class="main-image">
     <img src="../imgs/img3-loft22.jpg" alt="image" />
