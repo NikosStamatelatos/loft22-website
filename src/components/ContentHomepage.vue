@@ -55,7 +55,7 @@
   <div class="grid2-container">
     <div class="grid-item">
       <div class="grid-item2-container">
-        <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
+        <img src="../imgs/freddo-new.jpg" class="coffee-img" alt="SweetSnacks" />
         <div class="txt-title">FREDDO</div>
         <!--.icon-->
 
@@ -71,7 +71,7 @@
     <div class="grid-item">
       <!--.grid-item-->
       <div class="grid-item2-container">
-        <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
+        <img src="../imgs/filter-coffee.jpg" class="coffee-img" alt="SweetSnacks" />
         <div class="txt-title">ΚΑΦΕΣ ΦΙΛΤΡΟΥ</div>
         <!--.icon-->
 
@@ -86,7 +86,7 @@
     <!--/grid-item-->
     <div class="grid-item">
       <div class="grid-item3-container">
-        <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
+        <img src="../imgs/hot-chocolate.jpg" class="coffee-img" alt="SweetSnacks" />
         <div class="txt-title">ΖΕΣΤΗ ΣΟΚΟΛΑΤΑ</div>
         <!--.icon-->
 
@@ -102,7 +102,7 @@
     <div class="grid-item">
       <!--.grid-item-->
       <div class="grid-item3-container">
-        <img src="../imgs/freddo.jpg" class="coffee-img" alt="SweetSnacks" />
+        <img src="../imgs/tea.jpg" class="coffee-img" alt="SweetSnacks" />
         <div class="txt-title">ΤΣΑΪ</div>
         <!--.icon-->
 

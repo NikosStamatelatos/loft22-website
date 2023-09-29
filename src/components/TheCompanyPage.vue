@@ -2,7 +2,7 @@
   <router-link to="/menu"></router-link>
   <div class="grid-container">
     <div class="grid_8">
-      <img src="../imgs/company.jpg" class="company-img" />
+      <img src="../imgs/loft22-company.jpg" class="company-img" />
       <div class="txt-for-company">
         <p>
           Το Loft22 ξεκινάει το ταξίδι του το 2023 στον κόσμο του καφέ
