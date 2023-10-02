@@ -1217,7 +1217,7 @@ html[xmlns] .slides {
   transition: all 0.3s ease;
 }
 
-.flex-direction-nav .flex-prev {
+/* .flex-direction-nav .flex-prev {
   left: 0px;
   background: url("../imgs/left.svg") top left;
 }
@@ -1225,7 +1225,7 @@ html[xmlns] .slides {
 .flex-direction-nav .flex-next {
   right: 0px;
   background: url("../imgs/right.svg") top left;
-}
+} */
 
 /* Pause/Play */
 .flex-pauseplay a {
